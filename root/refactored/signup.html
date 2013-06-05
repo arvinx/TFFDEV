@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hitupp - Sign Up</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="signup.css">
+<link href="bootstrap_po/css/bootstrap.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<div id="container">
+
+	<div id="head">
+		<div id="topbar"></div>
+
+		<div class="header">
+			<a href="file:///u/b/barrigaj/Desktop/root/land/land.html"><img id="logo" alt="Logo" src="images/Logo2_162x68.png"></a>
+		</div>
+
+		<div id="rightheader">
+			<div id="nolink">Already a member?</div>
+			<div id="lin"><a href="#">Sign In</a></div>
+			<div id="button"><a href="#" class="signup">Sign Up</a></div>
+		</div>
+	</div>
+
+	<div class="body">
+		<div id="signup">Sign Up</div>
+
+		<div id="info">
+			<div id="started">GET STARTED</div>
+			<div id="form">
+				<form id="signupform" action="#" autocomplete="on" method="post">
+					<input id="single" type="text" name="fname" placeholder="First Name" required />
+					<input id="single" type="text" name="lname" placeholder="Last Name" required />
+					<input id="dbl" type="text" name="username" placeholder="Username" maxlength="7" required />
+					<input id="single" type="password" name="password" placeholder="Password" required />
+					<input id="single" type="password" name="repassword" placeholder="Confirm Password" required />
+					<input id="single" type="text" name="birthday" placeholder="Birthday: DD/MM/YYYY" required />
+					<input id="single" type="text" name="email" placeholder="Email" required />
+					<div id="submit">
+						<a href="#" onclick="formSubmit()" class="nextstep">Next Step</a>
+					</div>
+					<div class="inf">
+					<a href="#" id="popover" data-toggle="popover"><img src="images/info_25x25.png"></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="footleft">
+			<div class="row foot-text">Copyright &copy; 2013 Hitupp LLC.</div>
+			<div class="row foot-text">Created and Maintained in Toronto, Ontario</div>
+			<div class="row">
+				<div class="social"><img src="img/twitter.png" alt="Twitter" class="socimg"></div>
+				<div class="social"><img src="img/facebook.png" alt="Facebook" class="socimg"></div>
+			</div>
+		</div>
+		<div class="footright">
+			<ul class="nav">
+				<li><a href="#">About Us</a></li>
+				<li><a href="signup.html">Sign Up</a></li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>	
+		</div>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap_po/js/bootstrap.min.js"></script>
+<script src="signup.js"></script>
+<script>
+$(function ()
+{ $('#popover').popover({
+	content:'Lorem ipsum dolor sit amet, ne prompta conceptam qui, ei everti intellegebat eum, pri ne malis eirmod offendit. Diam brute sapientem per no, te fugit recteque vix. Nam libris phaedrum tacimates eu, est sententiae concludaturque ut.',
+	trigger:'hover',
+	title:'Help',
+	placement:'right'});
+});
+</script>
+<script>
+function formSubmit()
+{
+	document.getElementById("signupform").submit();
+}
+</script>
+</body>
+</html>
