@@ -1,0 +1,71 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hitupp - Sign Up</title>
+<link rel="stylesheet" type="text/css" href="{% static "css/common.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "css/signup.css" %}">
+<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<div id="container">
+	<header>
+		<div class="topbar"></div>
+		<div class="header">
+			<a href="land.html"><img id="logo" alt="Logo" src="{% static "img/Logo2_162x68.png" %}"></a>
+		</div>
+		<div class="rightheader">
+			<div class="nolink">Already a member?</div>
+			<div class="lin"><a href="#">Sign In</a></div>
+			<div class="button"><a href="#" class="signup">Sign Up</a></div>
+		</div>
+	<header>
+
+	<div class="body">
+		<div id="signup">Sign Up</div>
+
+		<div class="info">
+			<div id="started">GET STARTED</div>
+			<div class="form">
+				<form class="signupform" action="#" autocomplete="on" method="post">
+				{% csrf_token %}
+					<input class="single" type="text" name="fname" placeholder="First Name" required />
+					<input class="single" type="text" name="lname" placeholder="Last Name" required />
+					<input class="dbl" type="text" name="username" placeholder="Username" maxlength="7" required />
+					<input class="single" type="password" name="password" placeholder="Password" required />
+					<input class="single" type="password" name="repassword" placeholder="Confirm Password" required />
+					<input class="single" type="text" name="birthday" placeholder="Birthday: DD/MM/YYYY" required />
+					<input class="single" type="text" name="email" placeholder="Email" required />
+					<div class="submit">
+						<a href="#" onclick="formSubmit()" id="nextstep">Next Step</a>
+					</div>
+					<div class="inf">
+					<a href="#" id="popover" data-toggle="popover"><img src="{% static "img/info_25x25.png" %}"></a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    {% include "footer.html" %}
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/signup.js"></script>
+<script>
+$(function ()
+{ $('#popover').popover({
+	content:'Lorem ipsum dolor sit amet, ne prompta conceptam qui, ei everti intellegebat eum, pri ne malis eirmod offendit. Diam brute sapientem per no, te fugit recteque vix. Nam libris phaedrum tacimates eu, est sententiae concludaturque ut.',
+	trigger:'hover',
+	title:'Help',
+	placement:'right'});
+});
+</script>
+<script>
+function formSubmit()
+{
+	document.getElementById("signupform").submit();
+}
+</script>
+</body>
+</html>
