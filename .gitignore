@@ -35,3 +35,7 @@ nosetests.xml
 .project
 .pydevproject
 
+# For Hitupp projects only
+personal.py
+sqlite3.db
+
