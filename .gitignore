@@ -39,3 +39,6 @@ nosetests.xml
 personal.py
 sqlite3.db
 
+# mac DS_store
+.DS_Store
+
