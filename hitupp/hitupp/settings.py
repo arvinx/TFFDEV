@@ -23,6 +23,9 @@ DATABASES = {
     }
 }
 
+# The URL where requests are redirected for login
+LOGIN_URL = "/signin"
+
 # The site-specific user profile model used by this site
 AUTH_PROFILE_MODULE = 'tff.UserProfile'
 

@@ -17,12 +17,23 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 )
 
+urlpatterns += patterns('backend.account',
+    url('^login$', 'process_login'),
+    url('^logout$', 'process_logout'),
+    url('^signin$', 'signin_page', name="signin"),
+)
+
+urlpatterns += patterns('backend.home',
+    url('^home$', 'home_page', name="home"),
+)
+
 urlpatterns += patterns('backend.views',
     url('^$', 'front_page'),
 )
 
 urlpatterns += patterns('backend.register',
-    url('^signup$', 'signup_page'),
+    url('^signup$', 'signup_page', name="signup"),
+    url('^register$', 'process_registration'),
 )
 
 if settings.DEBUG:

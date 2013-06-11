@@ -1,4 +1,5 @@
 {% load static from staticfiles %}
+{% load url from future %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,7 @@
 	<header>
 		<div class="topbar"></div>
 		<div class="header">
-			<a href="land.html"><img id="logo" alt="Logo" src="{% static "img/Logo2_162x68.png" %}"></a>
+			<a href="{% url 'backend.views.front_page' %}"><img id="logo" alt="Logo" src="{% static "img/Logo2_162x68.png" %}"></a>
 		</div>
 		<div class="rightheader">
 			<div class="nolink">Already a member?</div>
@@ -28,7 +29,8 @@
 		<div class="info">
 			<div id="started">GET STARTED</div>
 			<div class="form">
-				<form class="signupform" action="#" autocomplete="on" method="post">
+				<form id="signupform" action="{% url 'backend.register.process_registration' %}" 
+				    autocomplete="on" method="post">
 				{% csrf_token %}
 					<input class="single" type="text" name="fname" placeholder="First Name" required />
 					<input class="single" type="text" name="lname" placeholder="Last Name" required />
