@@ -1,0 +1,68 @@
+{% load static from staticfiles %}
+{% load url from future %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href="{% static "css/storyboard.css" %}">
+</head>
+<body>
+    <div id ="stories" class = "container">
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nisl sapien, fringilla in lorem vel, ultricies lobortis risus. Etiam in semper sem. Nullam pretium vel eros nec gravida. Suspendisse ipsum nunc, aliquam nec mauris sed, fermentum faucibus risus. In hendrerit tempor lectus in consectetur</div>
+            <div class="credit">by <i>One</i></div>
+        </div>
+        <div class = "story twobytwo">
+            <div class = "avatar"></div>
+            <div class = "blurb">This is a blurb</div>
+            <div class="credit">by <i>Two</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">Blurbs are invisible</div>
+            <div class="credit">by <i>Three</i></div>
+        </div>
+        <div class = "story onebytwo">
+            <div class = "avatar"></div>
+            <div class = "blurb">Until your mouse hovers around them</div>
+            <div class="credit">by <i>Four</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">I'm not sure how this is gonna be loaded</div>
+            <div class="credit">by <i>Five</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">Or how this is going to be dynamically generated</div>
+            <div class="credit">by <i>Six</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">But JQuery.</div>
+            <div class="credit">by <i>Seven</i></div>
+        </div>
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>        
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="{% static "js/jquery.masonry.min.js" %}"></script>
+    <script>
+        $(function(){
+            $('#stories').masonry({
+                // options
+                itemSelector : '.story',
+            });
+
+            $(window).on('resize', function(){
+                $('#stories').masonry('reload');
+            });
+        });
+    </script>
+</body>
+</html>

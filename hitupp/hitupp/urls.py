@@ -23,6 +23,14 @@ urlpatterns += patterns('backend.account',
     url('^signin$', 'signin_page', name="signin"),
 )
 
+urlpatterns += patterns('backend.storyboard',
+    url('^storyboard$', 'storyboard'),
+)
+
+urlpatterns += patterns('backend.experience',
+    url('^experience$', 'experience'),
+)
+
 urlpatterns += patterns('backend.home',
     url('^home$', 'home_page', name="home"),
 )
