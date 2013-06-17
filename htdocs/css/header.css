@@ -1,0 +1,98 @@
+/* Squeezes span* together, removing the gutter */
+.no-space [class*="span"] {
+    margin-left: 0;
+}
+
+#header-wrapper{
+    height: 70px;
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16pt;
+}
+
+#logo-container > img{
+    width: 95.3px;
+    height: 40px;
+    margin: 15px 0;
+}
+
+/* DISCOVER and GROUPS labels */
+.nav-label{
+    position: relative;
+    top: 25px;
+}
+#nav-tab > * > div, #search-tab{
+    text-align: center;
+    height: 70px;
+}
+.activated{
+    background: #e9e8e6;
+}
+.highlighted{
+    color: #f99219;
+}
+
+/*----SEARCH BAR------*/
+#search-bar{
+    position: relative;
+    top: 19px;
+    width: 100%
+}
+/* I limited the width to 75% so it stays within the tab when .activated */
+#search-tool{
+    width: 75%;
+}
+
+#avatar-container{
+    position: relative;
+}
+#avatar-container > img{
+    position: relative;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+}
+.hype{
+    position: absolute;
+    top: 22px;
+    left: 28px;
+    z-index: -5;
+    background-image:url(../img/HypeFlag_48x23.png);
+    width:48px;
+    height:23px;
+    color: white;
+    font-size:13pt;
+    font-weight: 200;
+    text-align: center;
+}
+
+#notif{
+    position: relative;
+}
+#notif > img{
+    position: relative;
+    top: 15px;
+    width: 40px;
+    height: 40px;
+}
+.notif-counter{
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    float: left;
+    background: #f6921e;
+    color: white;
+    border-radius: 3px;
+    padding: 1px 4px;
+    font-size: 10pt;
+    font-weight: 200;
+}
+
+#arrow-button{
+    position: relative;
+    top: 22px;
+    left: 18px;
+}
+.dropdown > * {
+    text-align: center;
+}
