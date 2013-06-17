@@ -1,0 +1,68 @@
+.spacer{
+    margin: 20px;
+}
+.spacer40{
+    margin: 40px;
+}
+
+#title-bar{
+    height: 140px;
+}
+#title-nav{
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 28pt;
+    padding:45px 0;
+    color: #383838;
+}
+#banner{
+    background: #e9e8e6;
+}
+
+.collection{
+}
+
+.collection  > div{
+    font-family: PN, Helvetica, sans-serif;
+}
+
+.collection-date{
+    font-size: 21pt;
+    font-weight: 900;
+}
+
+.poster, .event, .info, .action-bar{
+    padding: 5px 0;
+}
+
+.event{
+    font-size: 15pt;
+    font-weight: 100;
+    color: #aeaeae;
+}
+
+.event b{
+    font-weight: 900;
+    color: #383838;
+}
+
+.info{
+    color: #aeaeae;
+}
+
+.action-bar{
+    visibility: hidden;
+}
+
+.exp-item:hover > .action-bar{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+

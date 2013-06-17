@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<title>Experience Board</title>
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/header.css"/>
+<link rel="stylesheet" type="text/css" href="css/exp_board.css"/>
+
+</head>
+<body>
+<div id="global-container">
+    <div class="topbar"></div>
+    <div id="header" class="row-fluid">
+        <div id="header-wrapper" class="span8 offset2">
+            <div id="logo-container" class="span2"><img src="img/Logo2_162x68.png" alt="Hitupp Logo"></div>
+            <div id="nav-tab" class="span3">
+                <div class="row-fluid no-space">
+                    <div id="discover" class="span6 activated">
+                        <span class="nav-label highlighted">Discover</span>
+                    </div>
+                    <div id="groups" class="span6">
+                        <span class="nav-label">Groups</span>
+                    </div>
+                </div>
+            </div>
+            <div id="search-tab" class="span3 offset1">
+                <div id="search-bar" class="input-prepend">
+                    <span class="add-on"><i class="icon-search"></i></span>
+                    <input id="search-tool" type="search" placeholder="search experiences or add a friend">
+                </div>
+            </div>
+            <div id="personal" class="span3">
+                <div class="row-fluid">
+                    <div id="notif" class="span3 offset3">
+                        <img src="img/Bell_41x44.png">
+                        <span class="notif-counter">10</span>
+                    </div>
+                    <div id="avatar-container" class="span4">
+                        <div class="hype">72</div>
+                        <img id="avatar" src="img/Marcus_44x44.png" alt="Avatar Image">
+                    </div>
+                    <div class="dropdown" class="span1">
+                        <a id="arrow-button" class="dropdown-toggle" data-toggle="dropdown" href='#'>
+                            <img src="img/arrowdown_20x20.png">
+                        </a>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                            <li><a tabindex="-1" href="#">Profile</a></li>
+                            <li><a tabindex="-1" href="#">Settings</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="{% url 'backend.account.process_logout' %}">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="row-fluid">
+        <div id="title-bar" class="span12">
+            <div id="title-nav" class="span8 offset2">Discover: Popular / Recommended / Friends / New / Genres</div>
+        </div>
+    </div>
+    <div class="row-fluid spacer"></div>
+    <div id="content" class="row-fluid">
+        <div id="content-wrapper" class="span8 offset2">
+            <div id="time-nav" class="span3">
+                <ul>
+                    <li>Today</li>
+                    <li>Tomorrow</li>
+                    <li>This Week</li>
+                    <li>Future</li>
+                </ul>
+            </div>
+            <div id="poster-view" class="span9">
+                <div class="collection">
+                    <div class="row-fluid">
+                        <span class="collection-date">Aug. 25</span>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span4 exp-item">
+                            <div class="poster"><img src="http://lorempixel.com/250/250"></div>
+                            <div class="event"><b>Bounce</b> at the Drake</div>
+                            <div class="info">10PM | $15</div>
+                            <div class="action-bar">
+                                <img src="img/heart.png" alt="Like this">
+                                <img src="img/tweet.png" alt="Tweet this">
+                            </div>
+                        </div>
+                        <div class="span4 exp-item">
+                            <div class="poster"><img src="http://lorempixel.com/fashion/250/250"></div>
+                            <div class="event"><b>Pop Kult!</b> at the Gladstone</div>
+                            <div class="info">10PM | $20</div>
+                            <div class="action-bar">
+                                <img src="img/heart.png" alt="Like this">
+                                <img src="img/tweet.png" alt="Tweet this">
+                            </div>
+                        </div>
+                        <div class="span4 exp-item">
+                            <div class="poster"><img src="http://lorempixel.com/cats/250/250"></div>
+                            <div class="event"><b>Titan</b> at Tattoo</div>
+                            <div class="info">9PM | $10</div>
+                            <div class="action-bar"></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid">
+                        <div class="span4 exp-item">
+                            <div class="poster"><img src="http://lorempixel.com/city/250/250"></div>
+                            <div class="event"><b>Aesop Rock</b> at Rivoli</div>
+                            <div class="info">9PM | $10</div>
+                            <div class="action-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- START FOOTER.HTML -->
+    <!-- END FOOTER.HTML -->
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
