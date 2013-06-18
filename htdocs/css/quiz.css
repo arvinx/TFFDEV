@@ -93,6 +93,7 @@ liking. Feel free to change stuff around. */
 	padding:10px;
 }
 
+
 .inf{
 	position:absolute;
 	top:5px;
@@ -126,12 +127,10 @@ liking. Feel free to change stuff around. */
 
 .form{
 	width:800px;
-	height:400px;
 	margin:10px auto;
 }
 
-.single{
-	width:350px;
+.single{	width:350px;
 	margin:20px 0px 0px 20px;
 }
 
