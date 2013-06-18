@@ -1,0 +1,49 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+#map-canvas{
+    height: 600px;
+}
+#triangle-left {
+    position: absolute;
+    left: -18px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 50px solid #222;
+    border-bottom: 20px solid transparent;
+    z-index: -1;
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+    margin-top: 10px;
+}
+.info-window{
+    color: #eee;
+    padding: 10px;
+    font-family: PN, Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 100;
+}
+.cover{
+    border: 1px solid black;
+    height: 250px;
+    width: 250px;
+    background: url(http://abovegroundmagazine.com/images/photographs/Aesop-Rock-Skelethon-cover-250x250.jpg);
+}
+.loc-name{
+    color: #eee;
+    padding: 5px 0;
+}
+
+.loc-name b{
+    font-weight: 900;
+}
+
+.desc{
+    font-size: 12pt;
+}
+.info-toolbar{}
