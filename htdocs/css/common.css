@@ -160,6 +160,10 @@ a{
 .footer{
 	position:absolute;
 	bottom:0px;
+	/* footer kept on shifting to the right, was bothering me. not sure
+	how this "fix" stacks up against diff browsers/ diff page lengths so
+	feel free to comment out the left attribute */
+	left: 0px; 
 	width:100%;
 	height:118px;
 	background-image: url(../img/bottom.png);
