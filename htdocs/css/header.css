@@ -20,6 +20,10 @@ navbar a{
 	outline: none !important;
 }
 
+.nav-collapse.collapse{
+    z-index: 1000;
+}
+
 .activated{
     background: #e9e8e6;
 }
