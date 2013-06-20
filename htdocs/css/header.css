@@ -35,6 +35,11 @@ navbar a{
 
 input[type="search"]{
     width: 230px;
+    border-radius: 0;
+}
+
+.input-prepend .add-on:first-child{
+	border-radius: 0;
 }
 
 form.navbar-search{
