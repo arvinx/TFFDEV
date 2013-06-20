@@ -17,6 +17,13 @@
     height: auto !important;
 }
 
+.navbar.header-logged-out{
+    border-bottom: 1px solid #E3E3E3;
+    -webkit-box-shadow: 0 6px 4px -6px #E3E3E3;
+    -moz-box-shadow: 0 6px 4px -6px #E3E3E3;
+    box-shadow: 0 6px 4px -6px #E3E3E3;
+}
+
 .header-logged-out ul.nav{
     top: -68px;
 }

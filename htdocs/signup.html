@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="css/signup.css">
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/header.css"/>
+
+</head>
+<body>
+<div id="global-container">
+	<div id="header" class="navbar navbar-fixed-top header header-logged-out">
+		<div id="header-wrapper" class="container">
+			<!-- THE COLLAPSE BUTTON IN THE NAVBAR -->
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand brand-logged-out" id="logo-container" href="/"><img src="img/Logo2_162x68.png" alt="Hitupp Logo"></a>
+			<!-- Some of these divs can have the class "activated" -->
+			<div class="nav-collapse collapse">
+				<ul class="nav pull-right">
+					<li class="nav-label" style="padding-right: 0;"><a class="already-a-member">Already a member?</a></li>
+					<li class="nav-label" style="padding-left: 0;"><a>Sign In</a></li>
+					<li class="nav-label activated"><a class="highlighted">Sign Up</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row-fluid">
+			<div class="span12">
+				<div id="info">
+		<div id="started">GET STARTED</div>
+		<div id="form">
+			<form id="signupform" action="#" autocomplete="on" method="post">
+				<input id="single" type="text" name="fname" placeholder="First Name" required />
+				<input id="single" type="text" name="lname" placeholder="Last Name" required />
+				<input id="dbl" type="text" name="username" placeholder="Username" maxlength="7" required />
+				<input id="single" type="password" name="password" placeholder="Password" required />
+				<input id="single" type="password" name="repassword" placeholder="Confirm Password" required />
+				<input id="single" type="text" name="birthday" placeholder="Birthday: DD/MM/YYYY" required />
+				<input id="single" type="text" name="email" placeholder="Email" required />
+				<div id="submit">
+					<a href="#" onclick="formSubmit()" class="nextstep">Next Step</a>
+				</div>
+				<div class="inf">
+				<a href="#" id="popover" data-toggle="popover"><i class="icon-info-sign"></i></a>
+				</div>
+			</form>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
