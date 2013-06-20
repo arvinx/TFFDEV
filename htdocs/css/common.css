@@ -63,9 +63,15 @@ body{
 
 /***HEADER*****/
 
+.brand{
+	margin-right: 30px;
+	padding: 15px 20px !important;
+}
+
 .header{
 	margin:0 auto;
 	position: relative;
+	border-top: 4px solid #f6921e;
 }
 
 #container{
@@ -81,6 +87,21 @@ body{
 	-webkit-box-shadow: 0 6px 2px -6px #f6921e;
 	   -moz-box-shadow: 0 6px 2px -6px #f6921e;
 	        box-shadow: 0 6px 2px -6px #f6921e;
+}
+
+.navbar .nav-label{
+	top: 0;
+	padding: 15px; 
+}
+
+.navbar .nav-label a{
+	text-shadow: none !important;
+	font-weight: 700;
+	color: #333 !important;
+}
+
+.navbar .nav-label a.highlighted{
+	color: #f99219 !important;
 }
 
 
