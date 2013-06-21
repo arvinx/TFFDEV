@@ -1,6 +1,6 @@
 #!/bin/python
 """
-storybaord.py
+storyboard.py
 
 Handles the storyboard view
 """

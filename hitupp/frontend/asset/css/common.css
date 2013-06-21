@@ -1,28 +1,28 @@
 /******** FONT DECLARATIONS **********/
 @font-face
 {
-font-family: PN;
+font-family: PNL;
 src: url(fonts/ProximaNova-light.ttf);
 font-weight: 100;
 }
 
 @font-face
 {
-font-family: PN;
+font-family: PNB;
 src: url(fonts/ProximaNova-bold.ttf);
 font-weight: 900;
 }
 
 @font-face
 {
-font-family: PN;
+font-family: PNSB;
 src: url(fonts/ProximaNova-semibold.ttf);
 font-weight: 700;
 }
 
 @font-face
 {
-font-family: PN;
+font-family: PNR;
 src: url(fonts/ProximaNova-regular.ttf);
 }
 
@@ -52,10 +52,11 @@ html,body{
 	margin:0px;
 	padding:0px;
 	height:100%;
+	font-family:PNL, Courier New, Serif;
 }
 
 body{
-	font:normal 0.9em Arial; 
+	font:normal 0.9em PNL; 
 	margin:0; 
 	padding:0; 
 }
@@ -121,7 +122,7 @@ input[type="text"]:focus,input[type="password"]:focus{
 }
 
 .button {
-	font-family:PN,Helvetica,sans-serif;
+	font-family:PNL,Helvetica,sans-serif;
 	font-weight: 700;
 	font-size:18pt;
 	display: inline-block;
@@ -150,7 +151,7 @@ input[type="text"]:focus,input[type="password"]:focus{
 a{
 	text-decoration:none;	
 	font-size: 14.5pt;
-	font-family:PN, Helvetica, sans-serif;
+	font-family:PNL, Helvetica, sans-serif;
 	font-weight: 100;
 	color: white;
 }
@@ -158,10 +159,12 @@ a{
 /***FOOTER*****/
 
 .footer{
+    
 	position:absolute;
 	bottom:0px;
 	width:100%;
 	height:118px;
+	margin:0px auto;
 	background-image: url(../img/bottom.png);
 }
 
@@ -183,11 +186,11 @@ a{
 
 .row{
 	margin:0px 0px 5px 80px;
-	width:400px;
+	width:380px;
 }
 
 .foot-text{
-	font-family:PN, Helvetica, sans-serif;
+	font-family:PNL, Helvetica, sans-serif;
 	font-weight: 100;
 	font-size:13.5pt;
 	color:#696969;

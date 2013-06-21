@@ -3,9 +3,11 @@
 <!DOCTYPE html>
 <head>
 <title>Experience</title>
-<link rel="stylesheet" type="text/css" href="{% static "css/experience.css" %}" />
-<link rel="stylesheet" type="text/css" href="{% static "css/common.css" %}" />
-<link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static "css/common.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/experience.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/storyboardexp.css" %}" />
+
 </head>
 <body>
 <div id="container">
@@ -24,7 +26,7 @@
 				</div>
 			</div><!--headleft-->
 			<div id="headright">
-				<div class="dropdown">
+				<div class="dropdown" id="dd">
 					<a class="dropdown-toggle" data-toggle="dropdown" href='#'>
 				    <img src="{% static "img/arrowdown_20x20.png" %}" style="position:relative;"/>
 					</a>
@@ -60,36 +62,125 @@
 			<img src="{% static "img/Cover_1378x766.png" %}" alt="Cover Picture"/>
 		</div>
 		<div class="eventinfo">
-			<span class="eventname">TORONTO FROSH FESTIVAL</span><br/>
-			at the <a href='#'>Echo Beach</a>
+			<span class="eventname">TORONTO FROSH FESTIVAL</span><br/><br/>
+			at the <a href='#' id="location">Echo Beach</a>
 		</div>
 		<table class="inforow">
 		<tr>
-			<td class="left-align"><span id="num">2,479</span>&nbsp;&nbsp;<span id="orange">hitupp'd</span>
-			<td class="center-align"><span id="num">8</span>&nbsp;&nbsp;<span id="orange">friends hitupp</span>
-			<td class="right-align"><span id="num">5</span>&nbsp;&nbsp;days to event
+			<td class="left-align"><span class="num">2,479</span>&nbsp;&nbsp;<span class="orange">hitupp'd</span></td>
+			<td class="center-align"><span class="num">8</span>&nbsp;&nbsp;<span class="orange">friends hitupp</span></td>
+			<td class="right-align"><span class="num">5</span>&nbsp;&nbsp;days to event</td>
 		</tr>
 		</table>
-		<div data-dojo-type="dijit.layout.TabContainer" class="tabs" style="" tabStrip="true">
-			<div data-dojo-type="dijit.layout.ContentPane" title="My first tab" selected="true">
-				Lorem ipsum and all around...
-			</div>
+      <div class="bot">
+        <div id="tabs">
+          <div>
+            <div id="tabHeader_1" class="tabdiv">Details</div>
+	        <div id="tabHeader_2" class="tabdiv">Music</div>
+	        <div id="tabHeader_3" class="tabdiv">Storyboard</div>
+            <div id="tabHeader_4" class="tabdiv">Updates</div>
+            <div id="leftovertab">Thrown by Sound Academy </div>
+          </div>
+        </div>
+        <div class="botleft">
+          <div id="tabContainer">  
+			    <div id="tabscontent">
+			      <div class="tabpage" id="tabpage_1">
+		            Page 1
+			      </div>
+			      <div class="tabpage" id="tabpage_2">
+                    Page 2
+			      </div>
+			      <div class="tabpage" id="tabpage_3">
+			          <div id="stories" class="containers">
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story onebytwo"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story twobytwo"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story onebytwo"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+			          </div>
+			      </div>
+                  <div class="tabpage" id="tabpage_4">
+				    Page 4
+			      </div>
+			    </div>
+	      </div>
+        </div>
+        
+        <div class="botright">
+            <div id ="countdown" class="botrightdiv">
+                <span class="block"><span class="time">5  </span>days</span>
+                <span class="block"><span class="time">20  </span>hours</span>
+                <span class="block"><span class="time">54  </span>minutes</span>
+                <br/>for Early Bird Passes <br/><br/>
+                <a href="#" id="hituppevent">Hitupp this Event</a>
+            </div>
+            <!--Depending on how many different prices the event thrower gets, we add more divs here-->
+            <div class="botrightdiv">
+                <div class="price-value">
+                    <span class="orange big block">$10</span><br/>
+                    <span class="orange">Early-bird Single</span><br/>
+                    Until Sept 27th
+                </div>
+                <div class="price-desc">
+                One ticket pass to Outliers on Sept 28. ($5 discount for early-birds)
+                </div>
+            </div>
+            
+            <div class="botrightdiv">
+                <div class="price-value">
+                    <span class="orange big block">$45</span><br/>
+                    <span class="orange">Early-bird Single</span><br/>
+                    Until Sept 27th
+                </div>
+                <div class="price-desc">
+                Five ticket passes to Outliers on Sept 28. ($30 discount for early-birds)
+                </div>
+            </div>
+            <div class="botrightdiv inactive">
+                <div class="price-value">
+                    <span class="orange big block">$15</span><br/>
+                    <span class="orange">Single Pass</span><br/>
+                    Until Sept 27th
+                </div>
+                <div class="price-desc">
+                Offer is unavailable until early-bird period is over.<br/><br/>One ticket pass to Outliers
+                </div>
+            </div>
+        </div>
+        
+      </div><!--End of Bot-->
+      
+	</div><!--End of body-->
 
-			<div data-dojo-type="dijit.layout.ContentPane" title="My second tab">
-				Lorem ipsum and all around - second...
-			</div>
-
-			<div data-dojo-type="dijit.layout.ContentPane" title="My last tab">
-				Lorem ipsum and all around - last...
-			</div>
-		</div>	
-	</div>
-
-	{% include "footer.html" %}
+    {% include "footer.html" %}
 </div>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 <script src="{% static "js/experience.js" %}"></script>
+<script src="{% static "js/tabs_old.js" %}"></script>
+<script src="{% static "js/jquery.masonry.min.js" %}"></script>
+    <script>
+        $(function(){
+            $('#stories').masonry({
+                // options
+                itemSelector : '.story',
+            });
+
+            $(window).on('resize', function(){
+                $('#stories').masonry('reload');
+            });
+        });
+    </script>
+
 
 </body>
