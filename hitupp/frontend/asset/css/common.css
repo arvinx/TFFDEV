@@ -1,28 +1,28 @@
 /******** FONT DECLARATIONS **********/
 @font-face
 {
-font-family: PNL;
+font-family: PN;
 src: url(fonts/ProximaNova-light.ttf);
 font-weight: 100;
 }
 
 @font-face
 {
-font-family: PNB;
+font-family: PN;
 src: url(fonts/ProximaNova-bold.ttf);
 font-weight: 900;
 }
 
 @font-face
 {
-font-family: PNSB;
+font-family: PN;
 src: url(fonts/ProximaNova-semibold.ttf);
 font-weight: 700;
 }
 
 @font-face
 {
-font-family: PNR;
+font-family: PN;
 src: url(fonts/ProximaNova-regular.ttf);
 }
 
@@ -56,7 +56,7 @@ html,body{
 }
 
 body{
-	font:normal 0.9em PNL; 
+	font:normal 0.9em Arial; 
 	margin:0; 
 	padding:0; 
 }
@@ -122,7 +122,7 @@ input[type="text"]:focus,input[type="password"]:focus{
 }
 
 .button {
-	font-family:PNL,Helvetica,sans-serif;
+	font-family:PN,Helvetica,sans-serif;
 	font-weight: 700;
 	font-size:18pt;
 	display: inline-block;
@@ -190,7 +190,7 @@ a{
 }
 
 .foot-text{
-	font-family:PNL, Helvetica, sans-serif;
+	font-family:PN, Helvetica, sans-serif;
 	font-weight: 100;
 	font-size:13.5pt;
 	color:#696969;

@@ -1,3 +1,7 @@
+html, body{
+    font-family:PN, Helvetica, sans-serif;
+    font-weight:100;
+}
 
 #header{
     width:100%;
@@ -14,7 +18,6 @@
 	margin:0px auto;
 	background-color:#F4F4F4;
 }
-
 #topbar{
 	position:relative;
 	background-color:#f6921e;
@@ -28,9 +31,9 @@
 	position:relative;
 	margin:0px auto;
 	width:1110px;
-	/*width:66%;*/
-	height:70px;
-	font-family:PNL,Courier New, Serif;
+    height:70px;
+	font-family:PN,Helvetica, sans-serif;
+    font-weight:100;
 	font-size:22px;
 	min-width:1110px;
 }
@@ -71,22 +74,26 @@
    }
 #headleft3 a:link,#headleft3 a:visited{
 	text-decoration:none;
-	font-family:PNSB,Courier New,Serif;
+	font-family:PN,Helvetica,sans-serif;
+    font-weight:700;
 	color:#696969;
 }
 #headleft3 a:hover,#headleft3 a:active{
 	text-decoration:none;
-	font-family:PNSB,Courier New,Serif;
+	font-family:PN,Helvetica,sans-serif;
+    font-weight:700;
 	color:#595959;
 }
 #headleft2 a:link,#headleft2 a:visited{
 	text-decoration:none;
-	font-family:PNSB,Courier New,Serif;
+	font-family:PN,Helvetica,sans-serif;
+    font-weight:700;
 	color:#f4932a;
 }
 #headleft2 a:hover,#headleft2 a:active{
 	text-decoration:none;
-	font-family:PNSB,Courier New,Serif;
+	font-family:PN,Helvetica,sans-serif;
+    font-weight:700;
 	color:#df801a;
 }
 #dd{
@@ -105,6 +112,7 @@
 	width:48px;
 	height:23px;
 	float:right;
+    padding-top:2px;
 	margin-top:22px;
 	color:#ffffff;
 	font-size:18px;
@@ -144,7 +152,8 @@
     border-radius: 3px;
     padding: 1px 4px;
     font-size:14px;
-	font-family:PNSB,Courier New, Serif;
+	font-family:PN,Helvetica, sans-serif;
+    font-weight:700
 }
 .notif ul,.notif li {
     list-style: none;
@@ -171,14 +180,15 @@
 	min-width:1110px;
 	max-width:1100px;
 	text-align:center;
-	font-family:PNL,Courier New, Serif;
+	font-family:PN,Helvetica, sans-serif;
+    font-weight:100;
 	font-size:26px;
 	color:#939393;
 }
 .eventname{
 	color:#595959;
-	font-family:PNB,Courier New, Serif;
-	font-weight:bold;
+	font-family:PN,Helvetica, sans-serif;
+    font-weight:900;
 	font-size:60px;
 }
 a#location:link,a#location:visited{
@@ -189,7 +199,8 @@ a#location:hover,a#location:active{
 	text-decoration:none;
 }
 .inforow{
-	font-family:PNL,Courier New, Serif;
+	font-family:PN,Helvetica, sans-serif;
+    font-weight:700;
 	font-size:28px;
 	color:#606060;
 	width:1110px;
@@ -212,8 +223,8 @@ a#location:hover,a#location:active{
 	color:#fa8b32;
 }
 .num{
-	font-family:PNSB,Courier New, Serif;
-	font-weight:bold;
+	font-family:PN,Helvetica, sans-serif;
+	font-weight:700;
 	font-size:45px;
 	color:#595959;
 }
@@ -344,9 +355,9 @@ h2{
 	border:1px solid #ff9e36;
 	/*display:inline-block;*/
 	color:#ffffff;
-	font-family:PNL, Casper, Helvetica,sans-serif;
+	font-family:PN, Helvetica, sans-serif;
 	font-size:14px;
-	font-weight:bold;
+	font-weight:100;
 	padding:20px 30px;
 	text-decoration:none;
 }
@@ -361,8 +372,8 @@ h2{
 }
 
 .time{
-    font-family:PNSB,Courier New,Serif;
-    font-weight:bold;
+    font-family:PN, Helvetica, sans-serif;
+    font-weight:700;
     font-size:45px;
 }
 .block{
@@ -382,8 +393,8 @@ h2{
 }
     
 .big{
-    font-family:PNSB,Courier New, Serif;
-    font-weight:bold;
+    font-family:PN,Helveticasans-serif, sans-serif;
+    font-weight:700;
     font-size:50px;
     margin:0px 0px 10px 0px;
 }
@@ -403,3 +414,38 @@ h2{
  margin:0px auto;
 }
 
+/*** STORYBOARD CHANGES ***/
+
+.story:hover{
+    background:#fa8b32;
+    width: 330px;
+    height: 330px;
+}
+
+.avatar{
+    background: url(../img/user.png);
+}
+
+.small{
+    width: 160px;
+    height: 160px;
+    background:#D5D5D5;
+}
+
+.onebytwo{
+    height: 330px;
+    width: 160px;
+    background:#D5D5D5;
+}
+
+.twobyone{
+    width: 330px;
+    height: 160px;
+    background:#D5D5D5;
+}
+
+.twobytwo{
+    width: 330px;
+    height: 330px;
+    background:#D5D5D5;
+}
