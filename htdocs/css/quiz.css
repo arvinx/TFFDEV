@@ -1,5 +1,6 @@
 body {
-	font-size: 14px; }
+	font-size: 14px;
+}
 
 /* Mostly from signup.css. Changed the values a bit so they are more to my
 liking. Feel free to change stuff around. */
@@ -80,7 +81,7 @@ liking. Feel free to change stuff around. */
 .info{
 	position:relative;
 	width:900px;
-	height:500px;
+
 	background-color:#EFEFEF;
 	margin:10px auto 100px auto;
 	-webkit-border-radius:10px;
@@ -196,16 +197,16 @@ liking. Feel free to change stuff around. */
 /* Displaying a "div table" of the numbers and the form stuffs */
 
 .div-table {
-	display: table
+	display: block;
 }
 
 .row  {
-	display: table-row;
+	display:block;
+	width: 100%;
+	min-height: 60px;
 }
 
 .cell {
-	/*again, issues in IE7<?*/
-	display: table-cell;
 }
 	
 .number-div {
@@ -213,15 +214,34 @@ liking. Feel free to change stuff around. */
 	height:50px;
 	font-size:24pt;
 	text-align:center;
-	/*IE7< issues?*/
-	vertical-align:middle;
 	background-color:#333;
 	-webkit-border-radius:75px;
 	   -moz-border-radius:75px;
 	        border-radius:75px;	
 	color:#ffffff;
-	font-family:PN, casper, helvetica,sans-serif;
+	font-family:PN, Casper, Helvetica, Non-Serif;
 	font-weight:bold;
-	padding:auto;
-	text-decoration:none;
+	text-decoration:none; 
+	float: left;
+}
+
+.number-div p{
+	margin-top: 15px;
+}
+
+.selection-div {
+	float: right;
+	width: 730px;
+	padding-top: 5px;
+}
+
+/* for the white boxes on the right of the numbers */
+
+.selection {
+	background: #fff;
+	-webkit-border-radius:10px;
+	   -moz-border-radius:10px;
+	        border-radius:10px;
+	padding: 10px;	
+	
 }

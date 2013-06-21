@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/quiz.css">
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+
 </head>
 
 <body>
@@ -39,24 +40,47 @@
 
 		<div class="div-table">
 			<div class="row" id="1-music">
-				<div class="cell number-div">1</div>
-				<div class="cell selection-div">Selection 1</div>	
+				<div class="cell number-div"><p>1</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						Music
+					</div>
+				</div>	
 			</div>
 			<div class="row" id="2-location">
-				<div class="cell number-div">2</div>
-				<div class="cell selection-div">Selection 1</div>	
+				<div class="cell number-div"><p>2</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						Location
+					</div>	
+				</div>
 			</div>	
 			<div class="row" id="3-price">
-				<div class="cell number-div">3</div>
-				<div class="cell selection-div">Selection 1</div>	
+				<div class="cell number-div"><p>3</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						Price
+					</div>
+				</div>	
 			</div>
 			<div class="row" id="4-type">
-				<div class="cell number-div">4</div>
-				<div class="cell selection-div">Selection 1</div>	
+				<div class="cell number-div"><p>4</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						Type
+					</div>
+				</div>	
 			</div>
 			<div class="row" id="5-crowd">
-				<div class="cell number-div">5</div>
-				<div class="cell selection-div">Selection 1</div>	
+				<div class="cell number-div"><p>5</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						Crowd
+						<script>
+						$("#e18,#e18_2").select2();
+						</script>
+					</div>
+				</div>	
 			</div>
 		</div>
                 <!--
@@ -108,6 +132,7 @@
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.js"></script>
 <script src="js/signup.js"></script>
+<script src="js/select2/select2.js"></script>
 <script>
 $(function ()
 { $('#popover').popover({
