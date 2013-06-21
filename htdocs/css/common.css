@@ -191,6 +191,7 @@ a{
 }
 
 .footleft{
+	margin: 0;
 	padding:20px 0px 0px 0px;
 	height:90px;
 	float:left;

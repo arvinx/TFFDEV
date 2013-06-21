@@ -1,5 +1,5 @@
 body {
-	font-size: 14px;}
+	font-size: 14px; }
 
 /* Mostly from signup.css. Changed the values a bit so they are more to my
 liking. Feel free to change stuff around. */
@@ -107,6 +107,8 @@ liking. Feel free to change stuff around. */
 	margin:0px;
 }
 
+/* important is the title that asks "What's important to you?" */
+
 #important{
 	margin:10px auto 20px auto;
 	color:#f6921e;
@@ -145,6 +147,8 @@ liking. Feel free to change stuff around. */
 	margin:50px auto 20px auto;
 }
 
+/* The create account button at the bottom of the form */
+
 #createaccount {
 	display:block;	
 	width:200px;
@@ -159,21 +163,23 @@ liking. Feel free to change stuff around. */
             box-shadow: 0px 0px 10px #f6921e;
 	border:1px solid #ff9e36;
 	color:#ffffff;
-	font-family:PN, Casper, Helvetica,sans-serif;
+	font-family:pn, casper, helvetica,sans-serif;
 	font-size:24px;
 	font-weight:bold;
 	padding:8px 100px;
 	text-decoration:none;
 }
 
-#nextstep:hover {
+#createaccount:hover {
 	background-color:#f5a242;
 }
 
-#nextstep:active {
+#createaccount:active {
 	position:relative;
 	top:1px;
 }
+
+/* for the cool "i" popovers */
 
 .popover{
 	font-size:11pt;
@@ -185,4 +191,37 @@ liking. Feel free to change stuff around. */
 	font-family:PN, Casper, Helvetica,sans-serif;
 	font-size: 13.5pt;
 	font-weight: 700;  
+}
+
+/* Displaying a "div table" of the numbers and the form stuffs */
+
+.div-table {
+	display: table
+}
+
+.row  {
+	display: table-row;
+}
+
+.cell {
+	/*again, issues in IE7<?*/
+	display: table-cell;
+}
+	
+.number-div {
+	width:50px;
+	height:50px;
+	font-size:24pt;
+	text-align:center;
+	/*IE7< issues?*/
+	vertical-align:middle;
+	background-color:#333;
+	-webkit-border-radius:75px;
+	   -moz-border-radius:75px;
+	        border-radius:75px;	
+	color:#ffffff;
+	font-family:PN, casper, helvetica,sans-serif;
+	font-weight:bold;
+	padding:auto;
+	text-decoration:none;
 }
