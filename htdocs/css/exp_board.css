@@ -1,22 +1,23 @@
 .spacer{
     margin: 20px;
 }
-.spacer40{
-    margin: 40px;
-}
 
 #title-bar{
-    height: 140px;
+    padding: 0px 0 40px 0;
 }
+
 #title-nav{
     font-family: PN, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 28pt;
-    padding:45px 0;
     color: #383838;
 }
 #banner{
     background: #e9e8e6;
+}
+
+#view-as a{
+    font-weight: 400;
 }
 
 #title-nav a, #title-nav a:visited{
@@ -24,7 +25,9 @@
     font-weight: 700;
     font-size: 28pt;
     text-decoration: none;
-    color: #383838;
+}
+#title-nav a{
+    color: #dbdbda;
 }
 #time-nav a{
     color: #383838;
@@ -34,10 +37,6 @@
 #title-nav a:hover, #title-nav a:active, #time-nav a:hover, #time-nav a:active, a:hover, a:active{
     text-decoration: none;
     color: #f99219;
-}
-
-#view-opts{
-    padding: 5px;
 }
 
 .collection{
@@ -54,6 +53,10 @@
 
 .poster, .event, .info, .action-bar{
     padding: 5px 0;
+}
+
+.poster#img{
+    width: 100%;
 }
 
 .event{
@@ -85,20 +88,6 @@ ul{
     font-family: PN, Helvetica, sans-serif;
 }
 
-#view-opts{
-    text-align: right;
-}
-
-#view-opts li {
-    display: inline;
-    padding-left:20px;
-    font-size: 16pt;
-    font-weight: 100;
-}
-
-#view-opts a{
-    color: #383838;
-}
 
 #time-nav ul{    
     font-size: 14pt;
@@ -109,20 +98,6 @@ ul{
   margin: 0;
   padding: 10px 0;
 }
-
-@media (max-device-width: 1366px){
-    #title-nav{
-        font-size: 220%;
-    }
-}
-
-
-
-
-
-
-
-
 
 .hidden{
     visibility: hidden;
