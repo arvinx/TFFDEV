@@ -3,10 +3,43 @@
 <head>
 <title>Hitupp - Quiz</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/quiz.css">
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="js/select2/select2.css" rel="stylesheet">
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/select2/select2.js"></script>
+<script>
+	$(document).ready(function() { 
+		$("#select-crowd").select2({
+			placeholder: "Enter the sort of crowd you like",
+			tags:[],
+			tokenSeperators: [","]
+		}); 
+		$("#select-music").select2({
+			placeholder: "Enter in your three favourite genres",
+			maximumSelectionSize: 3
+		})
+		$("#select-venue").select2({
+			placeholder: "Enter the type of venue you prefer",
+			maximumSelectionSize: 1
+		})
+		$("#select-price").select2({
+			placeholder: "Enter in your cover limit",
+			maximumSelectionSize: 1,
+			tags: ["50","100"],
+		});
+		$("#select-location").select2({
+			tags:["Toronto", "Markham", "Mississauga"],
+                	tokenSeparators: [","],
+			placeholder: "Enter your address, postal code, or city",
+		});	
+	});
+</script>
 </head>
 
 <body>
@@ -43,7 +76,14 @@
 				<div class="cell number-div"><p>1</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
-						Music
+						<h2>Music</h2>
+						<select id="select-music" type="hidden" multiple="multiple" class="populate placeholder">
+							<option id="indie-rock">Indie Rock</option>
+							<option id="hip-hop">Hip Hop</option>
+							<option id="pop">Pop</option>
+							<option id="house">House</option>
+							<option id="trance">Trance</option>
+						</select>
 					</div>
 				</div>	
 			</div>
@@ -51,7 +91,8 @@
 				<div class="cell number-div"><p>2</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
-						Location
+						<h2>Location</h2>
+						<input type="hidden" id="select-location"/>
 					</div>	
 				</div>
 			</div>	
@@ -59,7 +100,8 @@
 				<div class="cell number-div"><p>3</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
-						Price
+						<h2>Price</h2>
+						<input type="hidden" id="select-price"/>
 					</div>
 				</div>	
 			</div>
@@ -67,7 +109,13 @@
 				<div class="cell number-div"><p>4</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
-						Type
+						<h2>Type</h2>
+						<select id="select-venue" type="hidden" multiple="multiple" class="populate placeholder">
+							<option id="stadium">Stadium</option>
+							<option id="outdoor">Outdoors</option>
+							<option id="convention-centre">Convention Centre</option>
+						</select>
+
 					</div>
 				</div>	
 			</div>
@@ -75,10 +123,8 @@
 				<div class="cell number-div"><p>5</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
-						Crowd
-						<script>
-						$("#e18,#e18_2").select2();
-						</script>
+						<h2>Crowd</h2>
+						<input type="hidden" id="select-crowd"/>
 					</div>
 				</div>	
 			</div>
@@ -129,10 +175,6 @@
 </div>
 
 </div>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="js/signup.js"></script>
-<script src="js/select2/select2.js"></script>
 <script>
 $(function ()
 { $('#popover').popover({
