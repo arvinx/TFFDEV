@@ -1,0 +1,6 @@
+#!/bin/sh
+
+git pull origin
+rm -f sqlite3.db
+python manage.py syncdb
+# To run the site locally, enter `python manage.py runserver`
