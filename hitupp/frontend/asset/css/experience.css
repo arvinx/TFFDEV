@@ -449,3 +449,43 @@ h2{
     height: 330px;
     background:#D5D5D5;
 }
+table.eventdetails{
+    font-family:PN,Helvetica,sans-serif;
+	border-bottom:1px solid #ECECEC;
+	width:730px;
+	border-collapse:collapse;
+    color:#707070;
+    margin-left:20px;
+    font-size:20px;
+}
+.eventdetails td{
+    padding-top:5px;
+	padding-bottom:20px;
+}
+.leftborder{
+	border-left:1px solid #ECECEC;
+	text-align:right;
+    color:#9F9F9F;
+}
+.row3{
+	padding:0px;
+}
+.row4{
+	height:10px;
+	padding:0px;
+}
+.italic{
+    font-style:italic;
+    font-weight:100;
+}
+
+img.detail{
+    width:25px;
+    height:25px;
+    margin:0px 10px;
+    position:relative;
+    top:-5px;
+}
+#twitter-widget-0{
+    width:740px;
+}

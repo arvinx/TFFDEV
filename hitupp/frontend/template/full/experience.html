@@ -59,7 +59,7 @@
 		</div><!--headnav-->
 	</div><!--header-->
 	<div id="body">
-		<div class="coverpic">
+		<div id="top" class="coverpic">
 			<img src="{% static "img/Cover_1378x766.png" %}" alt="Cover Picture"/>
 		</div>
 		<div class="eventinfo">
@@ -87,10 +87,46 @@
           <div id="tabContainer">  
 			    <div id="tabscontent">
 			      <div class="tabpage" id="tabpage_1">
-		            Page 1
+                    <table class="eventdetails">
+	                    <colgroup>
+	                    <col width="46%">
+	                    <col width="27%">
+	                    <col width="27%">
+	                    </colgroup>
+	                    <tr>
+	                    <td><img class="detail" src="{% static "img/Clock_25x25.png" %}" alt="Clock"/>Sept. 28th, 2012 at 10PM </td>
+	                    <td><img class="detail" src="{% static "img/DressCode_40x40.png" %}" alt="Dress Code"/>Casual</td>
+	                    <td class="leftborder">1194<img class="detail" src="{% static "img/Like_27x27.png" %}" alt="Facebook Like"/></td>
+	                    </tr>
+
+	                    <tr>
+	                    <td>
+	                        <table id="location">
+	                            <tr>
+	                                <td><img class="detail" src="{% static "img/Location_39x39.png" %}" alt="Locations"/></td>
+	                                <td>Sound Academy<br/><span class="italic">11 Polson Street, Toronto ON<br/>M5A 1A4</span></td>
+	                            </td>
+	                         </table>
+	                    <td style="padding-bottom:10px;"><img class="detail" src="{% static "img/Age_32x32.png" %}" alt="Age"/>19+</td>
+	                    <td class="leftborder" style="padding-bottom:10px">863<img class="detail" src="{% static "img/twitter.png" %}" alt="Twitter"/></td>
+	                    </td>
+
+	                    <tr>
+	                    <td class="row3"><img class="detail" src="{% static "img/Phone_33x33.png" %}" alt="Phone Number"/>416 469 5655</td>
+	                    <td class="row3"><img class="detail" src="{% static "img/Musicicon_34x34.png" %}" alt="Genre"/>Electronic</td>
+	                    <td class="row3 leftborder">
+	                        <a href="#top" class="orange">hit.upp/skftw
+	                        <img class="detail" src="{% static "img/ShortLink_29x29.png" %}" alt="Short Link"/></td>
+	                    </tr>
+	                    <tr>
+	                    <td class="row4"></td>
+	                    <td class="row4"></td>
+	                    <td class="row4"></td>
+	                    </tr>
+                    </table>	
 			      </div>
-			      <div class="tabpage" id="tabpage_2">
-                    Page 2
+			      <div class="tabpage" id="tabpage_2"> 
+                    <iframe width="95%" height="890" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1953860"></iframe>
 			      </div>
 			      <div class="tabpage" id="tabpage_3">
 			          <div id="stories" class="containers">
@@ -110,7 +146,9 @@
 			          </div>
 			      </div>
                   <div class="tabpage" id="tabpage_4">
-				    Page 4
+				    <a class="twitter-timeline" data-dnt="true" height="890" href="https://twitter.com/Alesso" 
+				        data-widget-id="348598441770885120" 
+				        data-chrome="transparent">Tweets by @Alesso</a>
 			      </div>
 			    </div>
 	      </div>
@@ -121,6 +159,7 @@
                 <span class="block"><span class="time">5  </span>days</span>
                 <span class="block"><span class="time">20  </span>hours</span>
                 <span class="block"><span class="time">54  </span>minutes</span>
+                <span class="block"><span class="time">33  </span>seconds left</span>
                 <br/>for Early Bird Passes <br/><br/>
                 <a href="#" id="hituppevent">Hitupp this Event</a>
             </div>
@@ -166,10 +205,13 @@
 </div>
 
 <script src="http://code.jquery.com/jquery.js"></script>
+<script src="{% static "js/soundcloud_widget.js" %}"></script>
 <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 <script src="{% static "js/experience.js" %}"></script>
 <script src="{% static "js/tabs.js" %}"></script>
 <script src="{% static "js/jquery.masonry.min.js" %}"></script>
+
+
     <script>
         $(function(){
             $('#stories').masonry({
@@ -182,6 +224,16 @@
             });
         });
     </script>
-
-
+    <script>
+    !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],
+        p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src=p+"://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);
+            }
+    }(document,"script","twitter-wjs");
+    </script>
 </body>
