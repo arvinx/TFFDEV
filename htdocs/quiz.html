@@ -17,19 +17,34 @@
 	$(document).ready(function() { 
 		$("#select-crowd").select2({
 			placeholder: "Enter the sort of crowd you like",
-			tags:[],
-			tokenSeperators: [","]
+			tags: [],
+			tokenSeperators: [","]			
 		}); 
+		/*
+		$("#select-crowd").on("change", 
+			function(e) {
+				console.log(e.val);
+		}
+		)*/
 		$("#select-music").select2({
 			placeholder: "Enter in your three favourite genres",
-			maximumSelectionSize: 3
+			maximumSelectionSize: 3,
+			tags: ["Indie Rock","Hip Hop","Pop","Trance","House","Rap","Polka"],
+			
 		})
+		$("#select-music").on("change", function() { $("#select-music").html($("#e15").val());});
+ 
+		$("#select-music").select2("container").find("ul.select2-choices").sortable({
+			containment: 'parent',
+			start: function() { $("#select-music").select2("onSortStart"); },
+			update: function() { $("#select-music").select2("onSortEnd"); }
+		});
 		$("#select-venue").select2({
 			placeholder: "Enter the type of venue you prefer",
 			maximumSelectionSize: 1
 		})
 		$("#select-price").select2({
-			placeholder: "Enter in your cover limit",
+			placeholder: "Enter in your cover limit (you can enter any number)",
 			maximumSelectionSize: 1,
 			tags: ["50","100"],
 		});
@@ -70,24 +85,30 @@
             <!-- I also put this same text in the help popover -->
             <div id="important-caption">Drag and Drop the options into your order</div>
             <div class="form">
-
+                <form id="signupform" action="/register" 
+                    autocomplete="on" method="post">
+                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='p5ePcdubkY5OMNDmcobeMcvkDFKLwFMX' /></div>
 		<div class="div-table">
-			<div class="row" id="1-music">
+			<div class="row" id="music">
 				<div class="cell number-div"><p>1</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
+						<div class="choices">
+							<ul>
+								<li id="1">List item 1</li>
+								<li id="2">List item 2</li>	
+								<li id="3">List item 3</li>
+								<li id="4">List item 4</li>
+							</ul>
+						</div>
+						<div class="choose">
 						<h2>Music</h2>
-						<select id="select-music" type="hidden" multiple="multiple" class="populate placeholder">
-							<option id="indie-rock">Indie Rock</option>
-							<option id="hip-hop">Hip Hop</option>
-							<option id="pop">Pop</option>
-							<option id="house">House</option>
-							<option id="trance">Trance</option>
-						</select>
+						<input id="select-music" type="hidden" multiple="multiple" class="populate placeholder" />
+						</div>
 					</div>
 				</div>	
 			</div>
-			<div class="row" id="2-location">
+			<div class="row" id="location">
 				<div class="cell number-div"><p>2</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
@@ -96,7 +117,7 @@
 					</div>	
 				</div>
 			</div>	
-			<div class="row" id="3-price">
+			<div class="row" id="price">
 				<div class="cell number-div"><p>3</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
@@ -105,7 +126,7 @@
 					</div>
 				</div>	
 			</div>
-			<div class="row" id="4-type">
+			<div class="row" id="type">
 				<div class="cell number-div"><p>4</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
@@ -119,7 +140,7 @@
 					</div>
 				</div>	
 			</div>
-			<div class="row" id="5-crowd">
+			<div class="row" id="crowd">
 				<div class="cell number-div"><p>5</p></div>
 				<div class="cell selection-div">
 					<div class="selection">
@@ -129,19 +150,7 @@
 				</div>	
 			</div>
 		</div>
-                <!--
-                <form id="signupform" action="/register" 
-                    autocomplete="on" method="post">
-                <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='p5ePcdubkY5OMNDmcobeMcvkDFKLwFMX' /></div>
-                    <input class="single" type="text" name="fname" placeholder="First Name" required />
-                    <input class="single" type="text" name="lname" placeholder="Last Name" required />
-                    <input class="dbl" type="text" name="username" placeholder="Username" maxlength="7" required />
-                    <input class="single" type="password" name="password" placeholder="Password" required />
-                    <input class="single" type="password" name="repassword" placeholder="Confirm Password" required />
-                    <input class="single" type="text" name="birthday" placeholder="Birthday: DD/MM/YYYY" required />
-                    <input class="single" type="text" name="email" placeholder="Email" required />
-                    -->
-<div class="submit">
+			<div class="submit">
                         <a href="#" onclick="formSubmit()" id="createaccount">Create Account</a>
                     </div>
                     <div class="inf">

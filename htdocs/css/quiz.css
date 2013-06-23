@@ -87,7 +87,7 @@ liking. Feel free to change stuff around. */
 	-webkit-border-radius:10px;
 	   -moz-border-radius:10px;
 	        border-radius:10px;
-    -webkit-box-shadow: 0 0 10px #B5B5B5;    
+    	-webkit-box-shadow: 0 0 10px #B5B5B5;    
 	   -moz-box-shadow: 0 0 10px #B5B5B5;
             box-shadow: 0 0 10px #B5B5B5;
 	border:3px solid #EBEBEB;
@@ -153,7 +153,7 @@ liking. Feel free to change stuff around. */
 	-webkit-border-radius:4px;
 	   -moz-border-radius:4px;
 	        border-radius:4px;
-    -webkit-box-shadow: 0px 0px 10px #f6921e;    
+	-webkit-box-shadow: 0px 0px 10px #f6921e;    
 	   -moz-box-shadow: 0px 0px 10px #f6921e;
             box-shadow: 0px 0px 10px #f6921e;
 	border:1px solid #ff9e36;
@@ -238,10 +238,14 @@ liking. Feel free to change stuff around. */
 	        border-radius:4px;
 	padding: 10px 15px;	
 	box-shadow:inset -1px 1px 7px #A8A8A8;
+	float: left;
+	width: 100%;
 }
 
 .selection .select2-container {
-	width: 400px
+	width: 587px;
+	background: #c6c6c6;
+	font-family: PN, Casper, Helvetica, sans-serif;
 }
 
 /* titles for each of the questions in the quiz */
@@ -252,4 +256,32 @@ liking. Feel free to change stuff around. */
 	font-size: 18pt;
 	font-family:PN, Casper, Helvetica,sans-serif;
 	font-weight: 700;
+}
+
+/* the area where the user's selected stuff shows up */
+
+.choices ul{
+	list-style-type: none;
+}
+/* don't have enough time to implement this at the moment.
+   if anyone else wants to take over this, that would be great
+   
+   so I was going to get the user's selections, take it out of 
+   the select2 box and into a div called "choices"...
+
+   since every section may have a different way of displaying choices
+   (e.g. the "music" section may have a list of genres, while the "price"
+   section would just be one price), I had to section off the styling based
+   on the div that the "choices" div is in... if that makes sense.
+
+   also remember to change the width of the .select2-container to 450px
+*/
+#music .choices {
+	/*so if anyone else decides to take over this, remove the display: none! lol */
+	display: none;
+	float: right;
+	width: 125px;
+	height: 100%;
+	font-family: PN, Casper, Helvetica, sans-serif;
+	text-align: right;
 }
