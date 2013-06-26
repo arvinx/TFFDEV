@@ -3,9 +3,12 @@
 <!DOCTYPE html>
 <head>
 <title>Experience</title>
-<link rel="stylesheet" type="text/css" href="{% static "css/experience.css" %}" />
-<link rel="stylesheet" type="text/css" href="{% static "css/common.css" %}" />
-<link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static "css/common.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/storyboard.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/experience.css" %}" />
+
+
 </head>
 <body>
 <div id="container">
@@ -24,7 +27,7 @@
 				</div>
 			</div><!--headleft-->
 			<div id="headright">
-				<div class="dropdown">
+				<div class="dropdown" id="dd">
 					<a class="dropdown-toggle" data-toggle="dropdown" href='#'>
 				    <img src="{% static "img/arrowdown_20x20.png" %}" style="position:relative;"/>
 					</a>
@@ -56,40 +59,181 @@
 		</div><!--headnav-->
 	</div><!--header-->
 	<div id="body">
-		<div class="coverpic">
+		<div id="top" class="coverpic">
 			<img src="{% static "img/Cover_1378x766.png" %}" alt="Cover Picture"/>
 		</div>
 		<div class="eventinfo">
-			<span class="eventname">TORONTO FROSH FESTIVAL</span><br/>
-			at the <a href='#'>Echo Beach</a>
+			<span class="eventname">TORONTO FROSH FESTIVAL</span><br/><br/>
+			at the <a href='#' id="location">Echo Beach</a>
 		</div>
 		<table class="inforow">
 		<tr>
-			<td class="left-align"><span id="num">2,479</span>&nbsp;&nbsp;<span id="orange">hitupp'd</span>
-			<td class="center-align"><span id="num">8</span>&nbsp;&nbsp;<span id="orange">friends hitupp</span>
-			<td class="right-align"><span id="num">5</span>&nbsp;&nbsp;days to event
+			<td class="left-align"><span class="num">2,479</span>&nbsp;&nbsp;<span class="orange">hitupp'd</span></td>
+			<td class="center-align"><span class="num">8</span>&nbsp;&nbsp;<span class="orange">friends hitupp</span></td>
+			<td class="right-align"><span class="num">5</span>&nbsp;&nbsp;days to event</td>
 		</tr>
 		</table>
-		<div data-dojo-type="dijit.layout.TabContainer" class="tabs" style="" tabStrip="true">
-			<div data-dojo-type="dijit.layout.ContentPane" title="My first tab" selected="true">
-				Lorem ipsum and all around...
-			</div>
+      <div class="bot">
+        <div id="tabs">
+          <div>
+            <div id="tabHeader_1" class="tabdiv">Details</div>
+	        <div id="tabHeader_2" class="tabdiv">Music</div>
+	        <div id="tabHeader_3" class="tabdiv">Storyboard</div>
+            <div id="tabHeader_4" class="tabdiv">Updates</div>
+            <div id="leftovertab">Thrown by Sound Academy </div>
+          </div>
+        </div>
+        <div class="botleft">
+          <div id="tabContainer">  
+			    <div id="tabscontent">
+			      <div class="tabpage" id="tabpage_1">
+                    <table class="eventdetails">
+	                    <colgroup>
+	                    <col width="46%">
+	                    <col width="27%">
+	                    <col width="27%">
+	                    </colgroup>
+	                    <tr>
+	                    <td><img class="detail" src="{% static "img/Clock_25x25.png" %}" alt="Clock"/>Sept. 28th, 2012 at 10PM </td>
+	                    <td><img class="detail" src="{% static "img/DressCode_40x40.png" %}" alt="Dress Code"/>Casual</td>
+	                    <td class="leftborder">1194<img class="detail" src="{% static "img/Like_27x27.png" %}" alt="Facebook Like"/></td>
+	                    </tr>
 
-			<div data-dojo-type="dijit.layout.ContentPane" title="My second tab">
-				Lorem ipsum and all around - second...
-			</div>
+	                    <tr>
+	                    <td>
+	                        <table id="location">
+	                            <tr>
+	                                <td><img class="detail" src="{% static "img/Location_39x39.png" %}" alt="Locations"/></td>
+	                                <td>Sound Academy<br/><span class="italic">11 Polson Street, Toronto ON<br/>M5A 1A4</span></td>
+	                            </td>
+	                         </table>
+	                    <td style="padding-bottom:10px;"><img class="detail" src="{% static "img/Age_32x32.png" %}" alt="Age"/>19+</td>
+	                    <td class="leftborder" style="padding-bottom:10px">863<img class="detail" src="{% static "img/twitter.png" %}" alt="Twitter"/></td>
+	                    </td>
 
-			<div data-dojo-type="dijit.layout.ContentPane" title="My last tab">
-				Lorem ipsum and all around - last...
-			</div>
-		</div>	
-	</div>
+	                    <tr>
+	                    <td class="row3"><img class="detail" src="{% static "img/Phone_33x33.png" %}" alt="Phone Number"/>416 469 5655</td>
+	                    <td class="row3"><img class="detail" src="{% static "img/Musicicon_34x34.png" %}" alt="Genre"/>Electronic</td>
+	                    <td class="row3 leftborder">
+	                        <a href="#top" class="orange">hit.upp/skftw
+	                        <img class="detail" src="{% static "img/ShortLink_29x29.png" %}" alt="Short Link"/></td>
+	                    </tr>
+	                    <tr>
+	                    <td class="row4"></td>
+	                    <td class="row4"></td>
+	                    <td class="row4"></td>
+	                    </tr>
+                    </table>	
+			      </div>
+			      <div class="tabpage" id="tabpage_2"> 
+                    <iframe width="95%" height="890" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fusers%2F1953860"></iframe>
+			      </div>
+			      <div class="tabpage" id="tabpage_3">
+			          <div id="stories" class="containers">
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story onebytwo"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story twobytwo"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story onebytwo"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+                          <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+			          </div>
+			      </div>
+                  <div class="tabpage" id="tabpage_4">
+				    <a class="twitter-timeline" data-dnt="true" height="890" href="https://twitter.com/Alesso" 
+				        data-widget-id="348598441770885120" 
+				        data-chrome="transparent">Tweets by @Alesso</a>
+			      </div>
+			    </div>
+	      </div>
+        </div>
+        
+        <div class="botright">
+            <div id ="countdown" class="botrightdiv">
+                <span class="block"><span class="time">5  </span>days</span>
+                <span class="block"><span class="time">20  </span>hours</span>
+                <span class="block"><span class="time">54  </span>minutes</span>
+                <span class="block"><span class="time">33  </span>seconds left</span>
+                <br/>for Early Bird Passes <br/><br/>
+                <a href="#" id="hituppevent">Hitupp this Event</a>
+            </div>
+            <!--Depending on how many different prices the event thrower gets, we add more divs here-->
+            <div class="botrightdiv">
+                <div class="price-value">
+                    <span class="orange big block">$10</span><br/>
+                    <span class="orange">Early-bird Single</span><br/>
+                    Until Sept 27th
+                </div>
+                <div class="price-desc">
+                One ticket pass to Outliers on Sept 28. ($5 discount for early-birds)
+                </div>
+            </div>
+            
+            <div class="botrightdiv">
+                <div class="price-value">
+                    <span class="orange big block">$45</span><br/>
+                    <span class="orange">Early-bird Single</span><br/>
+                    Until Sept 27th
+                </div>
+                <div class="price-desc">
+                Five ticket passes to Outliers on Sept 28. ($30 discount for early-birds)
+                </div>
+            </div>
+            <div class="botrightdiv inactive">
+                <div class="price-value">
+                    <span class="orange big block">$15</span><br/>
+                    <span class="orange">Single Pass</span><br/>
+                    Until Sept 27th
+                </div>
+                <div class="price-desc">
+                Offer is unavailable until early-bird period is over.<br/><br/>One ticket pass to Outliers
+                </div>
+            </div>
+        </div>
+        
+      </div><!--End of Bot-->
+      
+	</div><!--End of body-->
 
-	{% include "footer.html" %}
+    {% include "footer.html" %}
 </div>
 
 <script src="http://code.jquery.com/jquery.js"></script>
+<script src="{% static "js/soundcloud_widget.js" %}"></script>
 <script src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
 <script src="{% static "js/experience.js" %}"></script>
+<script src="{% static "js/tabs.js" %}"></script>
+<script src="{% static "js/jquery.masonry.min.js" %}"></script>
 
+
+    <script>
+        $(function(){
+            $('#stories').masonry({
+                // options
+                itemSelector : '.story',
+            });
+
+            $(window).on('resize', function(){
+                $('#stories').masonry('reload');
+            });
+        });
+    </script>
+    <script>
+    !function(d,s,id){
+    var js,fjs=d.getElementsByTagName(s)[0],
+        p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){
+            js=d.createElement(s);
+            js.id=id;
+            js.src=p+"://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js,fjs);
+            }
+    }(document,"script","twitter-wjs");
+    </script>
 </body>

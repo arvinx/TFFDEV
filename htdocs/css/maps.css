@@ -2,6 +2,17 @@ html, body{
     width: 100%;
     height: 100%;
 }
+
+#search-results{
+    position: relative;
+    top: 23px;
+    font-size: 18pt;
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 900;
+    color: #5b5b5b;
+}
+
+
 #map-canvas{
     height: 600px;
 }

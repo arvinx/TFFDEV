@@ -67,7 +67,7 @@
 	padding-top:30px;
 
 	font-size: 18pt;
-	font-family:PN, Casper, Helvetica,sans-serif;
+	font-family:PN, Helvetica,sans-serif;
 	font-weight: 700;
 }
 
@@ -107,7 +107,7 @@
 	color:#f6921e;
 	font-size:34pt;
 	text-align:center;
-	font-family:PN, Casper, Helvetica,sans-serif;
+	font-family:PN, Helvetica,sans-serif;
 	font-weight: 700;
 }
 
@@ -148,9 +148,9 @@
 	border:1px solid #ff9e36;
 	/*display:inline-block;*/
 	color:#ffffff;
-	font-family:PN, Casper, Helvetica,sans-serif;
+	font-family:PN, Helvetica,sans-serif;
 	font-size:24px;
-	font-weight:bold;
+	font-weight:700;
 	padding:8px 100px;
 	text-decoration:none;
 }

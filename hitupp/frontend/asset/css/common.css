@@ -52,6 +52,7 @@ html,body{
 	margin:0px;
 	padding:0px;
 	height:100%;
+	font-family:PNL, Courier New, Serif;
 }
 
 body{
@@ -150,7 +151,7 @@ input[type="text"]:focus,input[type="password"]:focus{
 a{
 	text-decoration:none;	
 	font-size: 14.5pt;
-	font-family:PN, Helvetica, sans-serif;
+	font-family:PNL, Helvetica, sans-serif;
 	font-weight: 100;
 	color: white;
 }
@@ -158,10 +159,12 @@ a{
 /***FOOTER*****/
 
 .footer{
+    
 	position:absolute;
 	bottom:0px;
 	width:100%;
 	height:118px;
+	margin:0px auto;
 	background-image: url(../img/bottom.png);
 }
 
@@ -183,7 +186,7 @@ a{
 
 .row{
 	margin:0px 0px 5px 80px;
-	width:400px;
+	width:380px;
 }
 
 .foot-text{
