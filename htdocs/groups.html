@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Groups</title>
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="css/header.css"/>
+        <link rel="stylesheet" type="text/css" href="css/groups.css"/>
+	    <link rel="stylesheet" href="css/storyboard.css">
+    </head>
+ 
+<body>
+<div id="global-container">
+	<div id="header" class="navbar navbar-fixed-top header">
+		<div id="header-wrapper" class="container">
+			<!-- THE COLLAPSE BUTTON IN THE NAVBAR -->
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+			<a class="brand" id="logo-container" href="/"><img src="img/Logo2_162x68.png" alt="Hitupp Logo"></a>
+			<!-- Some of these divs can have the class "activated" -->
+			<div class="nav-collapse collapse">
+				<ul class="nav">
+					<li class="nav-label"><a>Discover</a></li>
+					<li class="nav-label activated"><a class="highlighted">Groups</a></li>
+				</ul>
+
+				<form class="navbar-search pull-left offset1" method="get" action="/search/">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-search"></i></span>
+						<input name="q" type="search" placeholder="search experiences or add a friend" />
+					</div>
+				</form>
+
+				<ul class="nav pull-right notif-icons">
+					<li>
+						<a>
+							<img src="img/Bell_41x44.png">
+							<span class="notif-counter pull-right">10</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<img id="avatar" src="img/Marcus_44x44.png" alt="Avatar Image">
+							<span class="hype">72</span>
+							<img class="avatar-arrow" src="img/arrowdown_20x20.png"></a>
+						</a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+							<li><a tabindex="-1" href="#">Profile</a></li>
+							<li><a tabindex="-1" href="#">Settings</a></li>
+							<li class="divider"></li>
+							<li><a tabindex="-1" href="{% url 'backend.account.process_logout' %}">Log Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="banner" class="row-fluid">
+			<div id="title-bar" class="container">
+				<div id="title-nav" class="row-fluid"><br>
+					<div class="span6">
+					Groups: <a href="#" class="highlighted">Updated</a> / 
+					<a href="#">New</a> 
+					<br>
+					</div>
+					<div class="span3 offset2"> <a href="#"><img src="img/CreateGroup.png"></a> &nbsp;&nbsp;&nbsp;<img src="img/Options.png"> <img src="img/arrowdown.png"> </div>
+
+				</div>
+			</div>
+		</div>		
+	</div> <!-- end of the bar -->
+	
+	<div id="picbody" class="container">
+		<br>	
+		<div class="row-fluid">		
+			<div id="bigbox" class="span3 offset">
+				<div class="photograph" style="background-image: url(images/g2.jpg);"></div>
+				<div id="one" class="row-fluid">	
+				<div class="span6"><span id="bigname"style="line-height:65px">Group One</span> <br> <span id="bigorange">Last updated:</span></div>
+				<div id="hideme" class="span3 offset3"> <br> <img src="img/Groupcopy.png"> <br><br> <img src="img/Comments.png"> </div>
+				</div>
+			</div>
+
+			<div id="box" class="span2 offset">
+				<div class="photograph" style="background-image: url(images/g1.jpg);"></div>
+				<div id="one">		
+					<span id="gfont" style="line-height:30px">Group Two</span>   
+					<br>
+					<span id="updatefont">Last updated:</span>					
+				</div>		
+			</div>
+				
+			<div id="box" class="span2 offset">
+				<div class="photograph" style="background-image: url(images/g4.jpg);"></div>
+				<div id="one">
+					<span id="gfont" style="line-height:30px">Group Four</span>
+					<br>
+					<span id="updatefont">Last updated:</span>
+				</div>			
+			</div>
+
+			<div id="box" class="span2 offset">
+				<div class="photograph" style="background-image: url(images/g3.jpg);"></div>
+				<div id="one">				
+					<span id="gfont" style="line-height:30px">Group Three</span>
+					<br>
+					<span id="updatefont">Last updated:</span>
+				</div>			
+			</div>
+
+			<div id="box" class="span2 offset">
+				<div class="photograph" style="background-image: url(images/g5.jpg);"></div>
+				<div id="one">				
+					<span id="gfont" style="line-height:30px">Group Five</span>
+					<br>
+					<span id="updatefont">Last updated:</span>
+				</div>			
+			</div>
+		</div>			
+	</div>
+
+	<div id="stories" class="container">
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">Lorem </div>
+            <div class="credit">by <i>One</i></div>
+        </div>
+        <div class = "story twobytwo">
+            <div class = "avatar"></div>
+            <div class = "blurb">This is a blurb</div>
+            <div class="credit">by <i>Two</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">Blurbs are invisible</div>
+            <div class="credit">by <i>Three</i></div>
+        </div>
+        <div class = "story onebytwo">
+            <div class = "avatar"></div>
+            <div class = "blurb">Until your mouse hovers around them</div>
+            <div class="credit">by <i>Four</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">I'm not sure how this is gonna be loaded</div>
+            <div class="credit">by <i>Five</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">Or how this is going to be dynamically generated</div>
+            <div class="credit">by <i>Six</i></div>
+        </div>
+        <div class = "story small">
+            <div class = "avatar"></div>
+            <div class = "blurb">But JQuery.</div>
+            <div class="credit">by <i>Seven</i></div>
+        </div>
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+        <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>        
+        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+    </div>
+
+
+	<!-- Insert the MAIN content here using another fluid row. If you want it centered, have it class="span8 offset2" as well -->
+	<!-- For example: -->
+	<!-- <div id="banner" class="row-fluid" style="background: #e9e8e6;">
+		<div id="title-bar" class="span12">
+			<div id="title-nav" class="span8 offset2">Groups: 3 updates / 5 total</div>
+		</div>
+	</div> -->
+	<!-- Insert footer.html -->
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script>
+        $(function(){
+            $('#stories').masonry({
+                // options
+                itemSelector : '.story',
+            });
+
+            $(window).on('resize', function(){
+                $('#stories').masonry('reload');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
