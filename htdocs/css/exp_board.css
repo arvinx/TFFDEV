@@ -16,9 +16,21 @@
     background: #e9e8e6;
 }
 
+#view-as{
+    font-size: 14pt;
+    padding: 25px 0;
+}
+
+#view-as li{
+    display: inline-block;
+    padding: 0 0 0 35px;
+}
+
 #view-as a{
     font-weight: 400;
+    color: #cacaca;
 }
+
 
 #title-nav a, #title-nav a:visited{
     font-family: PN, Helvetica, sans-serif;
@@ -34,7 +46,7 @@
     font-family: PN, Helvetica, sans-serif;
     font-weight: 400;
 }
-#title-nav a:hover, #title-nav a:active, #time-nav a:hover, #time-nav a:active, a:hover, a:active{
+#title-nav a:hover, #title-nav a:active, #time-nav a:hover, #time-nav a:active, a:hover, a:active, #view-as a:hover{
     text-decoration: none;
     color: #f99219;
 }
@@ -78,7 +90,42 @@
     visibility: hidden;
 }
 
+.hitupp{
+    float: left;
+    z-index: 999;
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    visibility: hidden;
+}
+
+.hype_overlay{
+    width: 66px;
+    height: 26px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-image: url('../img/hype_overlay.png');
+    visibility: visible;
+}
+
+.hype_overlay_amount{
+    position: relative;
+    top: 5px;
+    left: 32px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
+}
+
+.exp-item{
+    position: relative;
+}
+
 .exp-item:hover > .action-bar{
+    visibility: visible;
+}
+
+.exp-item:hover > .hitupp{
     visibility: visible;
 }
 
