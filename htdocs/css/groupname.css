@@ -1,0 +1,126 @@
+
+#title-bar{
+    padding-top: 20px;
+}
+
+#title-nav{
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 55pt;
+    color: #383838;
+}
+#banner{
+    background: #e9e8e6;
+}
+
+#view-as a{
+    font-weight: 400;
+}
+
+#title-nav a, #title-nav a:visited{
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 28pt;
+    text-decoration: none;
+}
+#title-nav a{
+    color: #dbdbda;
+}
+#time-nav a{
+    color: #383838;
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#title-nav a:hover, #title-nav a:active, #time-nav a:hover, #time-nav a:active, a:hover, a:active{
+    text-decoration: none;
+    color: #f99219;
+}
+
+
+/*A man needs to write*/
+#updatefont{
+	font-family:PN,Courier New, Serif;
+	font-size:12px;
+	color:#595959;
+	margin:10px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+#gfont{
+	font-family:PN,Courier New, Serif;
+	font-size:22px;
+	color:#595959;
+	margin:10px;
+}
+#bigorange{
+	font-family:PN,Courier New, Serif;
+	font-size:20px;
+	color:#fa8b32;
+	margin:30px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+#bigname{
+	font-family:PN,Courier New, Serif;
+	font-size:45px;
+	color:#595959;
+	margin:30px;
+}
+.bigbanner{
+	height: 525px; 
+	width: 100%;
+	background: no-repeat center top;
+}
+
+
+/* nav bar stuff.  Touch this and die */
+#groupsnavbar {
+	padding-top:0; 
+	padding-bottom: 40px; 
+	overflow: hidden; 
+	width: 100%;
+}
+#filler {
+	border-radius: 5px; 
+	background: #EBEBEB;
+	overflow: hidden;  
+	padding: 15px 0;
+}
+#credentials {
+	color: #878787;  
+	float: right;
+	padding-right: 25px;
+}
+.shadetabs{
+	list-style-type: none;
+	width: 100%;
+	padding: 15px 0;
+	margin: 0;
+	text-align: left; 
+}
+.shadetabs li{
+	display: inline;
+	padding-right: 6px;
+	float: left;
+}
+.shadetabs li a{
+	border-radius: 5px;
+	color: white;
+	position: relative;
+	z-index: 1;
+	padding: 15px 25px;
+	background: #D2D2D2;
+}
+.shadetabs li a:hover{
+	color: #2d2b2b;
+}
+.shadetabs li a.selected{ 
+	background: #6E6E6E;
+	font-weight: bold;
+}
+
+

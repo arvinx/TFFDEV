@@ -1,14 +1,60 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <title>Hitupp - Quiz</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <link rel="stylesheet" type="text/css" href="css/quiz.css">
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+<link href="js/select2/select2.css" rel="stylesheet">
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/select2/select2.js"></script>
+<script>
+	$(document).ready(function() { 
+		$("#select-crowd").select2({
+			placeholder: "Enter the sort of crowd you like",
+			tags: [],
+			tokenSeperators: [","]			
+		}); 
+		/*
+		$("#select-crowd").on("change", 
+			function(e) {
+				console.log(e.val);
+		}
+		)*/
+		$("#select-music").select2({
+			placeholder: "Enter in your three favourite genres",
+			maximumSelectionSize: 3,
+			tags: ["Indie Rock","Hip Hop","Pop","Trance","House","Rap","Polka"],
+			
+		})
+		$("#select-music").on("change", function() { $("#select-music").html($("#e15").val());});
+ 
+		$("#select-music").select2("container").find("ul.select2-choices").sortable({
+			containment: 'parent',
+			start: function() { $("#select-music").select2("onSortStart"); },
+			update: function() { $("#select-music").select2("onSortEnd"); }
+		});
+		$("#select-venue").select2({
+			placeholder: "Enter the type of venue you prefer",
+			maximumSelectionSize: 1
+		})
+		$("#select-price").select2({
+			placeholder: "Enter in your cover limit (you can enter any number)",
+			maximumSelectionSize: 1,
+			tags: ["50","100"],
+		});
+		$("#select-location").select2({
+			tags:["Toronto", "Markham", "Mississauga"],
+                	tokenSeparators: [","],
+			placeholder: "Enter your address, postal code, or city",
+		});	
+	});
+</script>
 </head>
 
 <body>
@@ -39,25 +85,79 @@
             <!-- I also put this same text in the help popover -->
             <div id="important-caption">Drag and Drop the options into your order</div>
             <div class="form">
-                <!--
                 <form id="signupform" action="/register" 
                     autocomplete="on" method="post">
                 <div style='display:none'><input type='hidden' name='csrfmiddlewaretoken' value='p5ePcdubkY5OMNDmcobeMcvkDFKLwFMX' /></div>
-                    <input class="single" type="text" name="fname" placeholder="First Name" required />
-                    <input class="single" type="text" name="lname" placeholder="Last Name" required />
-                    <input class="dbl" type="text" name="username" placeholder="Username" maxlength="7" required />
-                    <input class="single" type="password" name="password" placeholder="Password" required />
-                    <input class="single" type="password" name="repassword" placeholder="Confirm Password" required />
-                    <input class="single" type="text" name="birthday" placeholder="Birthday: DD/MM/YYYY" required />
-                    <input class="single" type="text" name="email" placeholder="Email" required />
-                    <div class="submit">
+		<div class="div-table">
+			<div class="row" id="music">
+				<div class="cell number-div"><p>1</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						<div class="choices">
+							<ul>
+								<li id="1">List item 1</li>
+								<li id="2">List item 2</li>	
+								<li id="3">List item 3</li>
+								<li id="4">List item 4</li>
+							</ul>
+						</div>
+						<div class="choose">
+						<h2>Music</h2>
+						<input id="select-music" type="hidden" multiple="multiple" class="populate placeholder" />
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class="row" id="location">
+				<div class="cell number-div"><p>2</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						<h2>Location</h2>
+						<input type="hidden" id="select-location"/>
+					</div>	
+				</div>
+			</div>	
+			<div class="row" id="price">
+				<div class="cell number-div"><p>3</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						<h2>Price</h2>
+						<input type="hidden" id="select-price"/>
+					</div>
+				</div>	
+			</div>
+			<div class="row" id="type">
+				<div class="cell number-div"><p>4</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						<h2>Type</h2>
+						<select id="select-venue" type="hidden" multiple="multiple" class="populate placeholder">
+							<option id="stadium">Stadium</option>
+							<option id="outdoor">Outdoors</option>
+							<option id="convention-centre">Convention Centre</option>
+						</select>
+
+					</div>
+				</div>	
+			</div>
+			<div class="row" id="crowd">
+				<div class="cell number-div"><p>5</p></div>
+				<div class="cell selection-div">
+					<div class="selection">
+						<h2>Crowd</h2>
+						<input type="hidden" id="select-crowd"/>
+					</div>
+				</div>	
+			</div>
+		</div>
+			<div class="submit">
                         <a href="#" onclick="formSubmit()" id="createaccount">Create Account</a>
                     </div>
                     <div class="inf">
-                    <a href="#" id="popover" data-toggle="popover"><img src="http://127.0.0.1:8000/static/img/info_25x25.png"></a>
+                    <a href="#" id="popover" data-toggle="popover"><img src="img/info_25x25.png"></a>
                     </div>
                 </form>
-                -->
+                
             </div>
         </div>
 
@@ -69,8 +169,8 @@
         <div class="row foot-text">Copyright &copy; 2013 Hitupp LLC.</div>
         <div class="row foot-text">Created and Maintained in Toronto, Ontario</div>
         <div class="row">
-            <div class="social"><img src="http://127.0.0.1:8000/static/img/twitter.png" alt="Twitter" class="socimg"></div>
-            <div class="social"><img src="http://127.0.0.1:8000/static/img/facebook.png" alt="Facebook" class="socimg"></div>
+            <div class="social"><img src="img/twitter.png" alt="Twitter" class="socimg"></div>
+            <div class="social"><img src="img/facebook.png" alt="Facebook" class="socimg"></div>
         </div>
     </div>
     <div class="footright">
@@ -84,9 +184,6 @@
 </div>
 
 </div>
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-<script src="js/signup.js"></script>
 <script>
 $(function ()
 { $('#popover').popover({

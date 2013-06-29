@@ -1,0 +1,51 @@
+body{
+    font-family: PN, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+#header{
+    background: white;
+}
+
+#banner{
+    position: relative; 
+    background: url(../images/banner3.png) no-repeat top center; 
+    height: 500px; 
+    margin: 0 auto;     
+}
+
+#venue-logo-container{
+    height: 100px;
+}
+
+.logo{
+    position: relative;
+    top: -150px;
+    margin: 0 auto;
+    background: url(http://www.placecage.com/230/230) no-repeat center center;
+    height: 230px;
+    width: 230px;
+    border-radius: 230px;
+    box-shadow: 0 0 25px rgba(20, 20, 20, 1);
+}
+
+#venue-name{
+    text-align: center;
+}
+
+h1{
+    font-size: 53pt;
+    font-weight: 900;
+    text-shadow: 0 1px 1px white, 0 -1px 1px black;
+    color: #595959;
+}
+
+#tweet-container{
+    padding: 10px 0;
+    text-align: center;
+    color: #949393;
+}
+
+.tweet{
+    font-size: 17pt;
+}

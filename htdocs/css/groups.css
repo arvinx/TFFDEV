@@ -1,0 +1,144 @@
+
+#title-bar{
+    padding: 0 0 40px 0;
+}
+#title-nav{
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 28pt;
+    color: #383838;
+}
+#banner{
+    background: #e9e8e6;
+}
+#view-as a{
+    font-weight: 400;
+}
+#title-nav a, #title-nav a:visited{
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 28pt;
+    text-decoration: none;
+}
+#title-nav a{
+    color: #dbdbda;
+}
+#time-nav a{
+    color: #383838;
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#title-nav a:hover, #title-nav a:active, #time-nav a:hover, #time-nav a:active, a:hover, a:active{
+    text-decoration: none;
+    color: #f99219;
+}
+
+/*A man needs to write*/
+#updatefont{
+	font-family:PN,Courier New, Serif;
+	font-size:12px;
+	color:#595959;
+	margin:10px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+#gfont{
+	font-family:PN,Courier New, Serif;
+	font-size:22px;
+	color:#595959;
+	margin:10px;
+}
+#bigorange{
+	font-family:PN,Courier New, Serif;
+	font-size:20px;
+	color:#fa8b32;
+	margin:30px;
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+#bigname{
+	font-family:PN,Courier New, Serif;
+	font-size:45px;
+	color:#595959;
+	margin:30px;
+}
+
+/*Step one: Cut a hole in a box*/
+#hideme {
+	opacity:0;
+	transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+}
+
+#bigbox
+{
+	height: 525px; 
+	/*width: 525px; */
+	border: 1px solid grey;
+	text-align: left;
+	float: left;
+	position: relative;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#bigbox:hover #bigorange{ opacity:1; }
+#bigbox:hover #hideme{ opacity:1; }
+#bigbox:hover #one { 
+	top: 80%;
+	opacity:1;
+}
+
+#one {
+    background-color: white;
+	height: 25%;
+	width: 100%;
+	top: 87%;	
+	text-align: left;
+	float: left ;
+	position: relative;
+	z-index:100;
+	
+	opacity:0.5;
+    transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	transition: top 0.3s ease-in-out;
+	-moz-transition: top 0.3s ease-in-out;
+	-webkit-transition: top 0.3s ease-in-out;
+}
+
+#box {
+	height: 250px; /*Specify Height*/
+	/*width:  275px; */
+	border: 1px solid grey; 
+	text-align:left;
+	float:left;
+	position: relative;
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#box:hover #updatefont{ opacity:1; }
+
+#box:hover #one {     
+	top: 76%;
+	opacity:1; 
+ }
+
+.photograph { /*every time I look at it it makes me laugh*/
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-repeat: no-repeat; 
+	background-position: center;
+}
+
+
+#stories {
+	padding: 40px 0;
+
+}
