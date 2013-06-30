@@ -1,0 +1,126 @@
+html {
+zoom:0.9;
+}
+#header-wrapper{
+    font-family:PN,Helvetica,sans-serif;
+    font-weight:100;
+    margin-top:20px;
+    margin-bottom:10px;
+}
+.brand{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+ }
+#logo-container img{
+    display:block;
+    float:left;
+    height:137px;
+    width:306px;
+}
+#slogan-container{
+    padding-top:65px;
+    padding-bottom:0px;
+    float:left;
+    height:72px;
+    width:160px;
+    min-width:160px;
+}
+#navbar{
+    padding-top:60px;
+}
+#frontimg{
+    width:100%;
+    max-width:1940px;
+    background-image: url(../images/Banner2.png);
+    margin:0px auto;
+    padding-bottom:140px;
+    margin-bottom:10px;
+}
+#facetwi{
+    background-color:#F4F4F4;
+    margin-top:30px;
+    padding-bottom:30px;
+    -webkit-border-radius:5px;
+	   -moz-border-radius:5px;
+	        border-radius:5px;	
+}
+.socialimg{
+    height:150px;
+    margin-top:50px;
+    /*border:1px solid #DEDEDE;
+    -webkit-border-radius:30px;
+	   -moz-border-radius:30px;
+	        border-radius:30px;	*/
+	padding:5px 0px;
+}
+.descr{
+    line-height:40px;
+    font-size:30px;
+    text-align:center;
+}
+#needaccount {
+    margin-top:10px;
+	font-family:PN,Helvetica,sans-serif;
+	font-weight: 100;
+	font-size:30px;
+	line-height:50px;
+	background-color:#5ec2e2;
+	color:white;
+	-webkit-border-radius:1px;
+	   -moz-border-radius:1px;
+	        border-radius:1px;	
+	text-align:center;
+}
+#needaccount:hover{
+	background-color:#5ABAD9;
+
+}
+#needaccount:active {
+	position:relative;
+	top:1px;
+}
+.socialimg img{
+    display:block;
+    height:100px;
+    width:100px;
+    margin:0px auto;
+}
+.socialimg div{
+    text-align:center;
+    font-size:30px;
+}
+.twitter{
+    color:#4099FF;
+    /*background-color:rgba(0,172,237,0.25);*/
+}
+.facebook{
+    color:#3B5998;
+    /*background-color:rgba(59,89,152,0.25);*/
+}
+#or{
+    font-size:25px;
+    margin-top:50px;
+    line-height:150px;
+    text-align:center;
+}
+.throwinfo > div{
+    margin-top:20px;
+    border:1px solid #ECECEC;
+    -webkit-border-radius:4px;
+	   -moz-border-radius:4px;
+	        border-radius:4px;
+	padding:10px;
+    overflow:hidden;
+    font-size:14px;
+    color:#7d7d7d;
+    background-image: url(../img/bottom.png);
+    background-repeat:repeat-y;
+}
+.throwinfo > div > img{
+    height:110px;
+    width:110px;
+    display:block;
+    float:left;
+    margin-right:10px;
+}
+

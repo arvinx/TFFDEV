@@ -61,110 +61,126 @@
 		<div id="banner" class="row-fluid">
 			<div id="title-bar" class="container">
 				<div id="title-nav" class="row-fluid"><br>
-					<div class="span6">
-					Groups: <a href="#" class="highlighted">Updated</a> / 
-					<a href="#">New</a> 
-					<br>
+					<div style="float: left;">
+						Groups: 
+						<a href="#" class="highlighted">Updated</a> / 
+						<a href="#">Total</a> 
 					</div>
-					<div class="span3 offset2"> <a href="#"><img src="img/CreateGroup.png"></a> &nbsp;&nbsp;&nbsp;<img src="img/Options.png"> <img src="img/arrowdown.png"> </div>
-
+					
+					<div style="list-style-type: none; float: right;"> 
+						<a href="#"><img src="img/CreateGroup.png"></a> 
+						<li class="dropdown" style="display: inline; padding-left:20px;">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<img src="img/Options.png" >
+								<img src="img/arrowdown.png">
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+								<li><a tabindex="-1" href="#">Settings</a></li>
+								<li><a tabindex="-1" href="#">Delete</a></li>
+							</ul>
+						</li>
+					</div>
 				</div>
-			</div>
-		</div>		
-	</div> <!-- end of the bar -->
-	
-	<div id="picbody" class="container">
-		<br>	
-		<div class="row-fluid">		
-			<div id="bigbox" class="span3 offset">
-				<div class="photograph" style="background-image: url(images/g2.jpg);"></div>
-				<div id="one" class="row-fluid">	
-				<div class="span6"><span id="bigname"style="line-height:65px">Group One</span> <br> <span id="bigorange">Last updated:</span></div>
-				<div id="hideme" class="span3 offset3"> <br> <img src="img/Groupcopy.png"> <br><br> <img src="img/Comments.png"> </div>
-				</div>
-			</div>
+			
+				<div class="row-fluid">		
+					<div id="bigbox" class="span6 offset">
+						<div class="photograph" style="background-image: url(images/g2.jpg);"></div>
+						<div id="one" class="row-fluid">	
+							<div class="span9"><span id="bigname"style="line-height:65px">Group One</span> <br> <span id="bigorange">Last updated:</span></div>
+							<div id="hideme" class="span3"> <br> <img src="img/Groupcopy.png"> <br><br> <img src="img/Comments.png"> </div>
+						</div>
+					</div>
 
-			<div id="box" class="span2 offset">
-				<div class="photograph" style="background-image: url(images/g1.jpg);"></div>
-				<div id="one">		
-					<span id="gfont" style="line-height:30px">Group Two</span>   
-					<br>
-					<span id="updatefont">Last updated:</span>					
-				</div>		
-			</div>
-				
-			<div id="box" class="span2 offset">
-				<div class="photograph" style="background-image: url(images/g4.jpg);"></div>
-				<div id="one">
-					<span id="gfont" style="line-height:30px">Group Four</span>
-					<br>
-					<span id="updatefont">Last updated:</span>
+					<div id="box" class="span3 offset">
+						<div class="photograph" style="background-image: url(images/g1.jpg);"></div>
+						<div id="one">		
+							<span id="gfont" style="line-height:30px">Group Two</span>   
+							<br>
+							<span id="updatefont">Last updated:</span>					
+						</div>		
+					</div>
+						
+					<div id="box" class="span3 offset">
+						<div class="photograph" style="background-image: url(images/g4.jpg);"></div>
+						<div id="one">
+							<span id="gfont" style="line-height:30px">Group Four</span>
+							<br>
+							<span id="updatefont">Last updated:</span>
+						</div>			
+					</div>
+
+					<div id="box" class="span3 offset">
+						<div class="photograph" style="background-image: url(images/g3.jpg);"></div>
+						<div id="one">				
+							<span id="gfont" style="line-height:30px">Group Three</span>
+							<br>
+							<span id="updatefont">Last updated:</span>
+						</div>			
+					</div>
+
+					<div id="box" class="span3 offset">
+						<div class="photograph" style="background-image: url(images/g5.jpg);"></div>
+						<div id="one">				
+							<span id="gfont" style="line-height:30px">Group Five</span>
+							<br>
+							<span id="updatefont">Last updated:</span>
+						</div>			
+					</div>
 				</div>			
 			</div>
-
-			<div id="box" class="span2 offset">
-				<div class="photograph" style="background-image: url(images/g3.jpg);"></div>
-				<div id="one">				
-					<span id="gfont" style="line-height:30px">Group Three</span>
-					<br>
-					<span id="updatefont">Last updated:</span>
-				</div>			
-			</div>
-
-			<div id="box" class="span2 offset">
-				<div class="photograph" style="background-image: url(images/g5.jpg);"></div>
-				<div id="one">				
-					<span id="gfont" style="line-height:30px">Group Five</span>
-					<br>
-					<span id="updatefont">Last updated:</span>
-				</div>			
-			</div>
-		</div>			
+		</div>
 	</div>
 
+
+
+	<div class="container" style="padding-top:40px;">
+
+			<img src="img/Storyboard.png" >
+		<span >Storyboard</span><br>
 	<div id="stories" class="container">
-        <div class = "story small">
-            <div class = "avatar"></div>
-            <div class = "blurb">Lorem </div>
-            <div class="credit">by <i>One</i></div>
-        </div>
-        <div class = "story twobytwo">
-            <div class = "avatar"></div>
-            <div class = "blurb">This is a blurb</div>
-            <div class="credit">by <i>Two</i></div>
-        </div>
-        <div class = "story small">
-            <div class = "avatar"></div>
-            <div class = "blurb">Blurbs are invisible</div>
-            <div class="credit">by <i>Three</i></div>
-        </div>
-        <div class = "story onebytwo">
-            <div class = "avatar"></div>
-            <div class = "blurb">Until your mouse hovers around them</div>
-            <div class="credit">by <i>Four</i></div>
-        </div>
-        <div class = "story small">
-            <div class = "avatar"></div>
-            <div class = "blurb">I'm not sure how this is gonna be loaded</div>
-            <div class="credit">by <i>Five</i></div>
-        </div>
-        <div class = "story small">
-            <div class = "avatar"></div>
-            <div class = "blurb">Or how this is going to be dynamically generated</div>
-            <div class="credit">by <i>Six</i></div>
-        </div>
-        <div class = "story small">
-            <div class = "avatar"></div>
-            <div class = "blurb">But JQuery.</div>
-            <div class="credit">by <i>Seven</i></div>
-        </div>
-        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
-        <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
-        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
-        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
-        <div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>        
-        <div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
-    </div>
+			<div class = "story small">
+				<div class = "avatar"></div>
+				<div class = "blurb">Lorem </div>
+				<div class="credit">by <i>One</i></div>
+			</div>
+			<div class = "story twobytwo">
+				<div class = "avatar"></div>
+				<div class = "blurb">This is a blurb</div>
+				<div class="credit">by <i>Two</i></div>
+			</div>
+			<div class = "story small">
+				<div class = "avatar"></div>
+				<div class = "blurb">Blurbs are invisible</div>
+				<div class="credit">by <i>Three</i></div>
+			</div>
+			<div class = "story onebytwo">
+				<div class = "avatar"></div>
+				<div class = "blurb">Until your mouse hovers around them</div>
+				<div class="credit">by <i>Four</i></div>
+			</div>
+			<div class = "story small">
+				<div class = "avatar"></div>
+				<div class = "blurb">I'm not sure how this is gonna be loaded</div>
+				<div class="credit">by <i>Five</i></div>
+			</div>
+			<div class = "story small">
+				<div class = "avatar"></div>
+				<div class = "blurb">Or how this is going to be dynamically generated</div>
+				<div class="credit">by <i>Six</i></div>
+			</div>
+			<div class = "story small">
+				<div class = "avatar"></div>
+				<div class = "blurb">But JQuery.</div>
+				<div class="credit">by <i>Seven</i></div>
+			</div>
+			<div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+			<div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>
+			<div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+			<div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+			<div class = "story twobyone"><div class = "avatar"></div><div class="credit"></div></div>        
+			<div class = "story small"><div class = "avatar"></div><div class="credit"></div></div>
+		</div>
+ </div>
 
 
 	<!-- Insert the MAIN content here using another fluid row. If you want it centered, have it class="span8 offset2" as well -->
