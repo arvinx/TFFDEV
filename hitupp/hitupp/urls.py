@@ -31,6 +31,11 @@ urlpatterns += patterns('backend.experience',
     url('^experience$', 'experience'),
 )
 
+urlpatterns += patterns('backend.support',
+    url('support$', 'support'),
+)
+
+
 urlpatterns += patterns('backend.home',
     url('^home$', 'home_page', name="home"),
 )

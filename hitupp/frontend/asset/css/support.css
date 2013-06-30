@@ -1,0 +1,45 @@
+#body{
+	height: 100%;
+}
+
+
+.content-support {
+
+}
+
+h1 {
+	font-weight: 60px;
+	color:#595959;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 60px;
+	color:#595959;
+}
+
+.search {
+	text-align: right;
+}
+
+.subheaders h2 {
+	cursor: hand;
+	cursor: pointer;
+}
+
+.info {
+		cursor: hand;
+	cursor: pointer;
+	display: none;
+}
+
+.expandable-answer {
+	display: none;
+	background-color: #FAFAFA;
+	border-radius: 10px;
+	border-width: 2px;
+	border-color: #E3E3E3;
+	margin: 5px;
+	width: 50%;
+	padding: 8px;
+}

@@ -1,0 +1,135 @@
+{% load static from staticfiles %}
+{% load url from future %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hitupp - Support</title>
+<link href="{% static "bootstrap/css/bootstrap.css" %}" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="{% static "css/common.css" %}">
+    <link rel="stylesheet" type="text/css" href="{% static "css/experience.css" %}" />
+    <link rel="stylesheet" type="text/css" href="{% static "css/support.css" %}" />
+</head>
+<!-- support categories: FAQ, About, Privacy, and Tips
+	* search keywords and filter down in expanded div. *
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+<body>
+<div id="container">
+	<div id="header">
+		<div id="topbar"></div>
+		<div id="headnav">
+			<div id="headleft">
+				<div id="headleft1">
+				<img src="{% static "img/Logo2_162x68.png" %}" alt="Hitupp" id="l"/>
+				</div>
+				<div id="headleft2">
+				<a href="#">Discover</a>
+				</div>
+				<div id="headleft3">
+				<a href='#'>Groups</a>
+				</div>
+			</div><!--headleft-->
+			<div id="headright">
+				<div class="dropdown" id="dd">
+					<a class="dropdown-toggle" data-toggle="dropdown" href='#'>
+				    <img src="{% static "img/arrowdown_20x20.png" %}" style="position:relative;"/>
+					</a>
+				  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+					<li><a tabindex="-1" href="#">Profile</a></li>
+					<li><a tabindex="-1" href="#">Settings</a></li>
+					<li class="divider"></li>
+					<li><a tabindex="-1" href="{% url 'backend.account.process_logout' %}">
+					    Log Out</a></li>
+				  </ul>
+				</div><!--dropdown-->
+				<div class="profile">
+					<div class="hype">
+					&nbsp;&nbsp;&nbsp;72
+					</div>
+					<div class="pic">
+					<img src="{% static "img/Marcus_44x44.png" %}" alt="Profile"/>
+					</div>
+				</div><!--profile-->
+				<div class="notif">
+					<ul>
+						<li class="notification-container">
+							<img src="{% static "img/Bell_41x44.png" %}" alt="Bell" id="triggerbell"/>
+							<span class="notification-counter">3</span>
+						</li>
+					</ul>
+				</div><!--notif-->
+			</div><!--headright-->
+		</div><!--headnav-->
+	</div><!--header-->
+	<div id="body">
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<div class="span2"> 
+					<h1>Support</h1>
+				</div>
+				<div class="span8 search">
+					<form id="live-search" action="" class="styled" method="">
+    					<fieldset>
+        					<input type="text" class="text-input" id="filter" value="" />
+        						<span id="filter-count"></span>
+    					</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span6 offset3">
+				<div class="subheaders">
+				<div id="faq">
+					<h2>FAQ</h2>
+					<ul class="info">
+						<li>Something</li>
+						<div id="info-1" class="expandable-answer">
+							<p>The answer to the question</p>
+						</div>
+						<li>Lorem ipsum dolor sit amet, ne prompta conceptam qui, ei everti intellegebat </li>
+						<li>Lorem ipsum dolor sit amet, ne prompta conceptam qui</li>
+					</ul>
+				</div>
+
+				<div id="about">
+					<h2>About</h2>
+					<ul class="info">
+						<li> Something</li>
+					</ul>
+				</div>
+
+				<div id="privacy">
+					<h2>Privacy</h2>
+					<ul class="info">
+						<li class="info-1" title="info-1">Something</li>
+						<div id="info-1" class="expandable-answer">
+							<p>Lorem ipsum dolor sit amet, ne prompta conceptam qui, ei everti intellegebat eum, pri ne malis eirmod offendit. Diam brute sapientem per no, te fugit recteque vix. Nam libris phaedrum tacimates eu, est sententiae concludaturque ut. Quo cu movet prompta discere, at eos imperdiet patrioque signiferumque. Mucius placerat mea ad. Case rebum vivendo ei has. Aperiri docendi mediocritatem cum id, vel et wisi essent hendrerit. Te qui volutpat evertitur. Eum at zril dicam, ei qui decore homero.</p>
+						</div>
+						<li>Lorem ipsum dolor sit amet, ne prompta conceptam qui, ei everti intellegebat </li>
+						<li>Lorem ipsum dolor sit amet, ne prompta conceptam qui</li>
+					</ul>
+				</div>
+
+				<div id="tips">
+					<h2>Tips</h2>
+					<ul class="info">
+						<li> Something</li>
+					</ul>
+				</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	 {% include "footer.html" %}
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="{% static "bootstrap/js/bootstrap.js" %}"></script>
+
+<script src="{% static "js/experience.js" %}"></script>
+<script src="{% static "js/support.js" %}"></script>
+</body>
+</html>
