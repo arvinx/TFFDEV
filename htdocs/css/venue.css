@@ -9,7 +9,7 @@ body{
 
 #banner{
     position: relative; 
-    background: url(../images/banner3.png) no-repeat top center; 
+    background: url(http://placehold.it/1920x500) no-repeat top center; 
     height: 500px; 
     margin: 0 auto;     
 }
@@ -22,7 +22,7 @@ body{
     position: relative;
     top: -150px;
     margin: 0 auto;
-    background: url(http://www.placecage.com/230/230) no-repeat center center;
+    background: url(http://placehold.it/230x230/f6921e/ffffff) no-repeat center center;
     height: 230px;
     width: 230px;
     border-radius: 230px;
@@ -48,4 +48,98 @@ h1{
 
 .tweet{
     font-size: 17pt;
+}
+
+#statistics{
+    padding: 25px 0;
+    color: #595959;
+}
+
+.number{
+    font-size: 34pt;
+    font-weight: 900;
+}
+
+.stat-label{
+    font-size: 20pt;
+    position: relative;
+    top: -6px;
+    left: 5px;
+}
+
+.tabdiv{
+    background: #d5d5d5;
+    padding: 15px 65px;
+    margin: 0 5px 0 0;
+    width: auto;
+    border-radius: 5px;
+    float: left;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: 250ms all ease;
+    -moz-transition: 250ms all ease;
+    -ms-transition: 250ms all ease;
+    -o-transition: 250ms all ease;
+    transition: 250ms all ease;
+}
+
+.tab-label{
+    float: right;
+    padding: 15px 25px;
+    background: #ececec;
+    width: 46%;
+}
+
+.tabdiv:hover{
+    background: #999;
+}
+
+.tabdiv:active{
+    position: relative;
+    top: 2px;
+}
+
+.tabActiveHeader{
+    background: #7d7d7d;
+    cursor:pointer;
+    color: white;
+}
+
+#content-container{
+    margin: 25px 0;
+}
+
+.tabpage{
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.pad-left{
+    padding: 0 0 0 25px;
+}
+
+#loc-nav a{
+    color: #383838;
+    font-family: PN, Helvetica, sans-serif;
+    font-weight: 400;
+}
+#loc-nav a:hover, #loc-nav a:active{
+    text-decoration: none;
+    color: #f99219;
+}
+
+#loc-nav ul{    
+    font-size: 14pt;
+    font-weight: 400;
+}
+
+#loc-nav li{
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+.twitter-timeline{
+    width: 100%;
 }
